@@ -1,0 +1,133 @@
+/* Footer Styles */
+footer {
+    background-color: #184a98;
+    color: white;
+    padding: 20px;
+    /* height: 430px; */
+    margin-top: 20px;
+    background-image: url('/images/Vector\(1\).png');
+    /* Replace with your image path */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    background-position: center;
+    /* Center the image */
+    background-size: contain;
+    /* Scale image to fit within the div */
+    display: flex;
+    flex-direction: column;
+    /* Stack sections vertically */
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.f img,
+.x img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* Space between footer links, colors, and newsletter */
+    width: 80%;
+    /* Take full width */
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-links,
+.popular-colors,
+.newsletter {
+    display: inline-block;
+    /* Display divs horizontally */
+    vertical-align: top;
+    /* Align divs to the top */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-links a,
+.popular-colors a {
+    display: block;
+    /* Display anchors vertically */
+    margin-bottom: 12px;
+    /* Add space between anchors */
+    color: white;
+    text-decoration: none;
+}
+
+
+.newsletter .newsletter-inside button img {
+    width: 52px;
+    height: 52px;
+}
+
+.newsletter-inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3368AC;
+    border-radius: 25px;
+    border: none;
+    width: 90%;
+    padding-left: 20px;
+    height: 48px;
+}
+
+.newsletter input::placeholder {
+    color: white;
+}
+
+.newsletter-inside input {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.newsletter button {
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    padding-right: 0px;
+}
+
+/* .newsletter button :active {
+    border: none;
+} */
+
+.powerd {
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    /* Remove the default outline */
+    background-color: transparent;
+}

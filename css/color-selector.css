@@ -1,0 +1,273 @@
+.hero-section h1 {
+    color: rgba(15, 77, 156, 1);
+}
+
+.breadcrumbs {
+    left: 9.5%;
+    color: rgba(15, 77, 156, 1);
+}
+
+.breadcrumbs a {
+    color: rgba(15, 77, 156, 1);
+}
+
+
+
+
+
+
+/*main content*/
+.main-content {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.left-section {
+    flex: 0.6;
+}
+
+.right-section {
+    flex: 0.3;
+}
+
+.product-image {
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+}
+
+.color-details {
+    margin-top: 10px;
+    /* padding: 20px; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-name {
+    font-size: 3em;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+}
+
+.color-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+.color-buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.color-buttons .color-buttons-two {
+    background-color: rgba(15, 77, 156, 1);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.color-buttons .color-buttons-one {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(15, 77, 156, 1);
+    border: 1px solid rgba(15, 77, 156, 1);
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.color-box {
+    flex: 1;
+    /* Make each box take equal space */
+    height: 50px;
+    /* Adjust height as needed */
+    margin: 0 5px;
+    /* Add some spacing between boxes */
+    border-radius: 5px;
+    /* Optional: Rounded corners */
+}
+
+.color-box.red {
+    background-color: rgba(255, 22, 22, 1);
+}
+
+.color-box.gray {
+    background-color: rgba(100, 132, 143, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+
+}
+
+.color-box.yellow {
+    background-color: rgba(217, 255, 0, 1);
+}
+
+.color-box.pink {
+    background-color: rgba(255, 0, 178, 1);
+}
+
+.color-box.dark-blue {
+    background-color: rgba(17, 0, 254, 1);
+}
+
+/* Responsive adjustment (optional) */
+@media (max-width: 480px) {
+    .colors {
+        flex-direction: column;
+        /* Stack colors vertically on smaller screens */
+        align-items: stretch;
+        /* Stretch to fill width */
+    }
+
+    .color-box {
+        margin: 5px 0;
+        /* Adjust margins for vertical stacking */
+    }
+}
+
+
+
+.search-widget {
+    background-color: white;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    border-radius: 25px;
+}
+
+.search-tittle {
+    margin-top: 10px;
+    padding-left: 25px;
+    color: rgba(15, 77, 156, 1);
+}
+
+.line {
+    border: 1px solid rgba(227, 219, 216, 1);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 25px;
+    border: 1px solid rgba(227, 219, 216, 1);
+    padding: 10px 15px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.search-input input {
+    border: none;
+    background-color: transparent;
+}
+
+.popular-colors.color-selector {
+    background-color: white;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.popular-color {
+    padding-left: 25px;
+}
+
+.color-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.color-preview {
+    padding: 30px 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.color-preview.one {
+    background-color: rgba(107, 3, 3, 1);
+}
+
+.color-preview.two {
+    background-color: rgba(29, 173, 0, 1);
+}
+
+.color-preview.three {
+    background-color: rgba(31, 9, 157, 1);
+}
+
+.category-widget {
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.list-category {
+    padding-left: 25px;
+}
+
+.list-category div {
+    margin: 20px 0px 20px 0px;
+}
+
+.list-category div a {
+    text-decoration: none;
+    color: rgba(15, 77, 156, 1);
+}
+
+.tags-widget {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.tags {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid rgba(227, 219, 216, 1);
+    border-radius: 20px;
+    padding: 8px 10px;
+    margin: 2px;
+}
+
+.tag a {
+    text-decoration: none;
+    color: rgba(114, 114, 114, 1);
+}

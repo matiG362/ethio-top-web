@@ -1,0 +1,166 @@
+/* Products Section Styles */
+.products-section {
+    padding: 50px 0;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    gap: 20px;
+    /* align-items: center; */
+    background-color: #ffffff;
+    border-radius: 20px;
+    /* padding: 20px; */
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-image {
+    background-color: gray;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    width: 40%;
+    border-radius: 20px 0px 0px 20px;
+    /* margin: -20px 0px -20px -20px; */
+
+}
+
+.product-card-image img {
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    align-items: end;
+    width: 180%;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.product-content-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-content h3 {
+    margin-top: 0;
+}
+
+.product-content a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgba(15, 77, 156, 1);
+}
+
+.product-card p {
+    color: #555;
+}
+
+.product-card a {
+    display: inline-block;
+    /* margin-top: 15px; */
+    color: rgba(15, 77, 156, 1);
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+/*responsive goes here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* See More Button Styles */
+.line-with-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 70px auto;
+    position: relative;
+}
+
+.line-with-button::before,
+.line-with-button::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.see-more-button {
+    display: block;
+    margin: 30px auto;
+    padding: 20px 25px;
+    background-color: rgba(15, 77, 156, 1);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    width: fit-content;
+    border: none;
+    margin: 0 10px;
+    z-index: 1;
+}
+
+/* Optional hover effect */
+.see-more-button:hover {
+    background-color: #0056b3;
+}
+
+.middle-image {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.middle-image img {
+    width: 100%;
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    margin-bottom: 0px;
+}

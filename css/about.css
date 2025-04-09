@@ -1,0 +1,559 @@
+/* about-us-container section Styles */
+
+.about-us-container {
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* About Section Styles */
+.about-section {
+    display: flex;
+    gap: 20px;
+}
+
+.about-images {
+    width: 30%;
+}
+
+
+.about-image-left {
+    position: relative;
+    /* For absolute positioning of the second image */
+    display: flex;
+    /* use flexbox for vertical gap */
+    flex-direction: column;
+    /* images stack vertically */
+    align-items: center;
+    /* center images horizontally */
+    gap: 100px;
+    /* Adjust gap as needed */
+}
+
+.about-image-left img:nth-child(2) {
+    position: relative;
+    /* make the second image relative to the first */
+    width: 80%;
+    /* Adjust width as needed */
+    height: auto;
+}
+
+.about-image-left img:nth-child(1) {
+    width: 100%;
+    /* make the first image full width */
+    height: auto;
+}
+
+.about-images .experience-badge {
+    width: 90%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.about-images .experience-badge .experience-years {
+    margin-right: 15px;
+    font-size: 40px;
+}
+
+.about-images .experience-badge .experience-text {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about-images .experience-badge .experience-text .experience-text-bottom {
+    margin-top: 5px;
+    /* Adjust the gap as needed */
+    display: inline-block;
+    /* allows margin and width to work */
+}
+
+.about-images img {
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* about-info style*/
+
+.about-info {
+    width: 60%;
+    margin-left: 60px;
+}
+
+.about-info-text {
+    display: flex;
+    /* Use flexbox for side-by-side layout */
+    align-items: center;
+    /* Vertically align items */
+    gap: 10px;
+    /* Add space between the image and text (adjust as needed) */
+    color: #184a98;
+}
+
+.about-info-text img {
+    /* Optional: Style the image if needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.about-info h1 {
+    color: #184a98;
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.about-info p {
+    color: rgba(114, 114, 114, 1);
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.experience-badge {
+    background-color: #184a98;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+
+
+
+/* Our Mission/Vision */
+.mission-vision {
+    display: flex;
+    gap: 20px;
+}
+
+.mission-vision .card {
+    width: 50%;
+    background-color: #F2F5EC;
+    border: 1px solid rgba(227, 219, 216, 1);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.mission-vision .card-header {
+    display: flex;
+    /* Make image and h3 side by side */
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 25px;
+    margin-top: 15px;
+    /* Vertically align image and h3 */
+    gap: 10px;
+    /* Space between image and h3 */
+}
+
+.mission-vision .card img {
+    margin-right: 10px;
+    /* Optional: Style the image if needed */
+    width: 50px;
+    /* Example: Adjust image width */
+    height: auto;
+}
+
+.mission-vision .card p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    margin-left: 7px;
+}
+
+.mission-vision .card i {
+    font-size: 2em;
+    color: #184a98;
+}
+
+.mission-vision .card h3 {
+    color: #184a98;
+}
+
+
+
+
+
+
+.read-more-contact {
+    display: flex;
+    /* Arrange read more and contact info in a row */
+    align-items: center;
+    /* Vertically align items */
+    gap: 35px;
+    /* Space between read more and contact info */
+}
+
+.read-more {
+    border: 1px solid rgba(15, 77, 156, 1);
+    border-radius: 35px;
+    /* Add border */
+    padding: 12px 27px;
+    /* Add padding */
+    text-decoration: none;
+    /* Remove underline */
+    color: #184a98;
+    /* Text color */
+    display: inline-flex;
+    /* Make read more a flex container */
+    align-items: center;
+    /* Vertically align text and arrow */
+    gap: 5px;
+    /* Space between text and arrow */
+}
+
+.read-more-arrow {
+    font-size: 25px;
+    margin-bottom: 7px;
+    /* Adjust arrow size */
+}
+
+.contact-info {
+    display: flex;
+    /* Arrange phone icon and text in a row */
+    align-items: center;
+    /* Vertically align items */
+    gap: 10px;
+    /* Space between icon and text */
+    color: #184a98;
+}
+
+.phone-icon {
+    width: 50px;
+    /* Adjust icon size */
+    height: 50px;
+    border-radius: 50%;
+    /* Make it circular */
+    background-color: rgba(15, 77, 156, 1);
+    /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-icon img {
+    max-width: 70%;
+    /* Adjust image size inside circle */
+    max-height: 70%;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    /* Stack need help and phone number vertically */
+}
+
+.contact-text span:first-child {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    /* Adjust need help font size */
+}
+
+.contact-text span:last-child {
+    font-size: 1em;
+    /* Adjust phone number font size */
+}
+
+
+
+
+
+
+
+
+/* Ordering Process */
+.ordering-process {
+    /* height: 430px; */
+    border: 1px solid rgba(227, 219, 216, 1);
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    text-align: center;
+    background-image: url('/images/Vector.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ordering-process-text {
+    display: block;
+    padding-top: 70px;
+    color: rgba(15, 77, 156, 1);
+}
+
+.ordering-process h2 {
+    color: #184a98;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.process-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.process-card {
+    text-align: justify;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.process-card-2 {
+    margin-top: 40px;
+}
+
+.process-card p {
+    color: #184a98;
+}
+
+.process-card-2 p {
+    color: #184a98;
+}
+
+
+.middle-image {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.middle-image img {
+    width: 70%;
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+    margin-bottom: 60px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-image img {
+    height: 550px;
+}
+
+.contact-feild {
+    margin-left: 50px;
+}
+
+.contact-information {
+    display: flex;
+    /* Arrange phone icon and text in a row */
+    align-items: center;
+    /* Vertically align items */
+    gap: 15px;
+    /* Space between icon and text */
+    color: #184a98;
+}
+
+.contact-feild p {
+    display: flex;
+}
+
+.contact-feild h2 {
+    color: #184a98;
+    text-align: left;
+    /* Left-align the heading */
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.contact-form {
+    background-color: white;
+    border: 1px solid #F2F5EC;
+    border-radius: 25px;
+    height: 500px;
+    width: 600px;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.form-group .inside {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    /* Gap between form-groups */
+    border: 1px solid #ccc;
+    /* Border around input and image */
+    border-radius: 30px;
+    /* Optional: Rounded corners */
+    padding: 10px;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.form-group .inside-message {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.form-group .inside-message img {
+    margin-right: 5px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 20px;
+    color: #104D9D;
+    margin-bottom: 8px;
+}
+
+.contact-address .form-group label {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.contact-message .form-group label {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.inside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.inside input {
+    flex: 1;
+    /* Make input take up remaining space */
+    padding: 10px;
+    border: none;
+    /* Remove input border */
+    box-sizing: border-box;
+}
+
+.inside-message textarea {
+    flex: 1;
+    /* Make input take up remaining space */
+    padding: 10px;
+    border: none;
+    /* Remove input border */
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.contact-form button {
+    width: 90%;
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+    background-color: rgba(15, 77, 156, 1);
+    color: white;
+    border-radius: 20px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    /* Remove the default outline */
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-images,
+    .about-info {
+        width: 100%;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+    }
+
+    .process-cards {
+        flex-direction: column;
+    }
+
+    .process-card {
+        width: 100%;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-image,
+    .contact-form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Super",
+        "description": "Lorem",
+        "image": "/products-image/paint-number1.png",
+        "link": "/products/super"
+    },
+    {
+        "id": 2,
+        "name": "Wubet",
+        "description": "Lorem",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/wubet"
+    },
+    {
+        "id": 3,
+        "name": "ENAMIL",
+        "description": "Lorem",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/enamil"
+    },
+    {
+        "id": 4,
+        "name": "Glue",
+        "description": "Lorem",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/glue"
+    },
+    {
+        "id": 5,
+        "name": "Quartz",
+        "description": "Lorem",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/quartz"
+    },
+    {
+        "id": 6,
+        "name": "Mica",
+        "description": "Lorem",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/mica"
+    }
+]
