@@ -48,6 +48,41 @@
 
 
 
+.experience-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    background-color: #184a98;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+
+.year {
+    font-size: 40px;
+}
+
+.word {
+    margin-left: 10px;
+}
+
+.experience-holder {
+    background-image: url("../home-image/Group\ 8581.png");
+    background-size: cover;
+    /* Optional: adjust as needed */
+    background-repeat: no-repeat;
+    /* Optional: adjust as needed */
+    background-position: center;
+}
 
 
 
@@ -69,60 +104,119 @@
 
 
 /* Why Choose Us Section */
-.why-choose-us {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-}
 
+/* 
 .why-choose-us-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 70%;
     margin: auto;
-    background-color: transparent;
-    padding: 80px;
-    gap: 80px;
+    margin-top: 80px;
 }
 
 .why-choose-us-images {
-    width: 43%;
-    /* margin-right: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.why-choose-us-images>div:first-child {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    position: relative;
+}
+
+.why-choose-us-images>div:first-child>div:first-child {
+    grid-row: 1;
+    z-index: 1;
+
+}
+
+.why-choose-us-images>div:first-child>.experience-holder {
+    position: absolute;
+
+    top: 250px;
+    left: -40px;
+    right: -10px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.why-choose-us-images>div:first-child>.experience-badge {
+
+}
+
+.why-choose-us-images>div:last-child {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    position: relative;
+}
+
+.why-choose-us-images>div:last-child>div:first-child {
+    grid-row: 1;
+}
+
+.why-choose-us-images>div:last-child>div:last-child {
+    grid-row: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: -80px;
+    margin-right: 40px;
+    margin-top: -40px;
 }
 
 .why-choose-us-images img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
 }
 
-.why-choose-us-content {
-    width: 40%;
+@media (max-width: 768px) {
+    .why-choose-us-container {
+        grid-template-columns: 1fr;
+    }
 }
 
-.why-choose-us-content h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+
+.quality-section {
+    display: flex;
+    gap: 17px;
 }
 
-.why-choose-us-content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.why-choose-us-content li {
-    margin-bottom: 10px;
+.quality-item-header {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-.why-choose-us-content li:before {
-    content: '\2713';
-    /* Checkmark */
-    color: #007bff;
-    margin-right: 10px;
+.quality-title {
+    font-size: 18px;
+} */
+
+
+
+.why-choose-us-container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: end;
+    gap: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -172,6 +266,7 @@
     width: 90%;
     margin: auto;
 }
+
 
 .product-card {
     background-color: white;

@@ -1,0 +1,32 @@
+.hero-section h1 {
+    left: 25%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.product-card {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.product-card .product-card-image {
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.product-content-header p {
+    text-align: left;
+    color: rgba(114, 114, 114, 1);
+    font-weight: 400;
+}
+
+.product-content-header h4 {
+    color: rgba(15, 77, 156, 1);
+    font-weight: 600;
+}

@@ -1,0 +1,17 @@
+.line-with-button::before,
+.line-with-button::after {
+    display: none;
+}
+
+.line-with-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 70px auto;
+    position: relative;
+}
+
+.hero-section h1 {
+    left: 27%;
+}

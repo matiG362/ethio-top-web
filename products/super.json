@@ -1,0 +1,430 @@
+{
+    "Super 001": [
+        {
+            "id": 1,
+            "size": "2kg",
+            "name": "Super 001",
+            "description": "Super 001 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_001_2kg.jpg"
+        },
+        {
+            "id": 2,
+            "size": "3.5li",
+            "name": "Super 001",
+            "description": "Super 001 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_001_3_5li.jpg"
+        },
+        {
+            "id": 3,
+            "size": "4li",
+            "name": "Super 001",
+            "description": "Super 001 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_001_4li.jpg"
+        },
+        {
+            "id": 4,
+            "size": "20kg",
+            "name": "Super 001",
+            "description": "Super 001 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_001_20kg.jpg"
+        }
+    ],
+    "Super 102": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 102",
+            "description": "Super 102 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_102_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 102",
+            "description": "Super 102 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_102_4li.jpg"
+        }
+    ],
+    "Super 105": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 105",
+            "description": "Super 105 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_105_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 105",
+            "description": "Super 105 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_105_4li.jpg"
+        }
+    ],
+    "Super 111": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 111",
+            "description": "Super 111 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_111_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 111",
+            "description": "Super 111 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_111_4li.jpg"
+        }
+    ],
+    "Super 113": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 113",
+            "description": "Super 113 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_113_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 113",
+            "description": "Super 113 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_113_4li.jpg"
+        },
+        {
+            "id": 3,
+            "size": "20kg",
+            "name": "Super 113",
+            "description": "Super 113 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_113_20kg.jpg"
+        }
+    ],
+    "Super 116": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 116",
+            "description": "Super 116 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_116_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 116",
+            "description": "Super 116 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_116_4li.jpg"
+        }
+    ],
+    "Super 117": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 117",
+            "description": "Super 117 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_117_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 117",
+            "description": "Super 117 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_117_4li.jpg"
+        },
+        {
+            "id": 3,
+            "size": "20kg",
+            "name": "Super 117",
+            "description": "Super 117 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_117_20kg.jpg"
+        }
+    ],
+    "Super 125": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 125",
+            "description": "Super 125 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_125_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 125",
+            "description": "Super 125 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_125_4li.jpg"
+        }
+    ],
+    "Super 130": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 130",
+            "description": "Super 130 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_130_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 130",
+            "description": "Super 130 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_130_4li.jpg"
+        }
+    ],
+    "Super 139": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 139",
+            "description": "Super 139 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_139_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 139",
+            "description": "Super 139 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_139_4li.jpg"
+        }
+    ],
+    "Super 140": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 140",
+            "description": "Super 140 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_140_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 140",
+            "description": "Super 140 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_140_4li.jpg"
+        }
+    ],
+    "Super 141": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 141",
+            "description": "Super 141 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_141_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 141",
+            "description": "Super 141 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_141_4li.jpg"
+        }
+    ],
+    "Super 142": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 142",
+            "description": "Super 142 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_142_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 142",
+            "description": "Super 142 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_142_4li.jpg"
+        }
+    ],
+    "Super 160": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 160",
+            "description": "Super 160 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_160_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 160",
+            "description": "Super 160 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_160_4li.jpg"
+        }
+    ],
+    "Super 161": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 161",
+            "description": "Super 161 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_161_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 161",
+            "description": "Super 161 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_161_4li.jpg"
+        }
+    ],
+    "Super 162": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 162",
+            "description": "Super 162 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_162_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 162",
+            "description": "Super 162 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_162_4li.jpg"
+        }
+    ],
+    "Super 210": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 210",
+            "description": "Super 210 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_210_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 210",
+            "description": "Super 210 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_210_4li.jpg"
+        }
+    ],
+    "Super 211": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 211",
+            "description": "Super 211 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_211_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 211",
+            "description": "Super 211 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_211_4li.jpg"
+        }
+    ],
+    "Super 213": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 213",
+            "description": "Super 213 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_213_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 213",
+            "description": "Super 213 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_213_4li.jpg"
+        }
+    ],
+    "Super 216": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 216",
+            "description": "Super 216 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_216_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 216",
+            "description": "Super 216 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_216_4li.jpg"
+        }
+    ],
+    "Super 217": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 217",
+            "description": "Super 217 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_217_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 217",
+            "description": "Super 217 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_217_4li.jpg"
+        }
+    ],
+    "Super 224": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 224",
+            "description": "Super 224 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_224_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 224",
+            "description": "Super 224 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_224_4li.jpg"
+        }
+    ],
+    "Super 226": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 226",
+            "description": "Super 226 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_226_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 226",
+            "description": "Super 226 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_226_4li.jpg"
+        }
+    ],
+    "Super 227": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 227",
+            "description": "Super 227 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_227_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 227",
+            "description": "Super 227 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_227_4li.jpg"
+        }
+    ],
+    "Super 0217": [
+        {
+            "id": 1,
+            "size": "3.5li",
+            "name": "Super 0217",
+            "description": "Super 0217 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_0217_3_5li.jpg"
+        },
+        {
+            "id": 2,
+            "size": "4li",
+            "name": "Super 0217",
+            "description": "Super 0217 is likely a high-quality coating or treatment designed for enhanced performance and durability on various surfaces.",
+            "image": "/images/super_0217_4li.jpg"
+        }
+    ]
+}

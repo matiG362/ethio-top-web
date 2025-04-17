@@ -38,33 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 product_content_header.innerHTML = `<h3>${category.name}</h3>
                                 <p>${category.description}</p>`
-                product_content_footer.innerHTML = `<a href="/category-content.html?category=${category.name.toLowerCase()}">Read More</a>
+                product_content_footer.innerHTML = `<a href="../html/category-content.html?category=${category.name.toLowerCase()}">Read More</a>
                                 <img src="/products-image/diagonal-arrow.png" alt="diagonal arrow"> 
                                                `
 
                 product_content.appendChild(product_content_header);
                 product_content.appendChild(product_content_footer);
-
-
-                // const categoryLink = document.createElement('a');
-                // categoryLink.href = `/category-content.html?category=${category.name.toLowerCase()}`; // Link to the next page with category as a query parameter
-                // categoryDiv.innerHTML = `
-                //         <div class="product-card-image">
-                //             <img src="${category.image}" alt="${category.name}>
-                //         </div>
-                //         <div class="product-content">
-                //             <div class="product-content-header">
-                //                 <h3>${category.name}</h3>
-                //                 <p>${category.description}</p>
-                //             </div>
-                //             <div class="product-content-footer">
-                //                 <a href="/category-content.html?category=${category.name.toLowerCase()}">Read More</a>
-                //                 <img src="/products-image/diagonal-arrow.png" alt="diagonal arrow">
-                //             </div>
-                //         </div>
-                // `;
-                // categoryDiv.appendChild(categoryLink);
-
 
                 categoryDiv.appendChild(product_card_image);
                 categoryDiv.appendChild(product_content);

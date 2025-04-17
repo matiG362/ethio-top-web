@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "name": "Super",
+        "name": "SUPER",
         "description": "Lorem",
         "image": "/products-image/paint-number1.png",
         "link": "/products/super"
     },
     {
         "id": 2,
-        "name": "Wubet",
+        "name": "WUBET",
         "description": "Lorem",
         "image": "../products-image/paint-number1.png",
         "link": "/products/wubet"
@@ -22,21 +22,21 @@
     },
     {
         "id": 4,
-        "name": "Glue",
+        "name": "GLUE",
         "description": "Lorem",
         "image": "../products-image/paint-number1.png",
         "link": "/products/glue"
     },
     {
         "id": 5,
-        "name": "Quartz",
+        "name": "QUARTZ",
         "description": "Lorem",
         "image": "../products-image/paint-number1.png",
         "link": "/products/quartz"
     },
     {
         "id": 6,
-        "name": "Mica",
+        "name": "MICA",
         "description": "Lorem",
         "image": "../products-image/paint-number1.png",
         "link": "/products/mica"
