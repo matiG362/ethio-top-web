@@ -111,6 +111,40 @@ nav a {
 }
 
 
+/* 
+@media (max-width: 480px) {
+    .logo .logo-img {
+        max-width: 30px !important;
+        height: auto !important;
+        margin-left: 10px !important;
+    }
+
+    .logo img {
+        max-width: 75px !important;
+        height: auto !important;
+        margin-left: 10px !important;
+    }
+} */
+
+.logo .logo-img {
+    margin-left: 29px;
+    background-color: #F2F5EC;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img:last-child {
+    /* Styling for the last image on larger screens if needed */
+}
+
+
+
+
+
+
 
 
 /* Responsive Adjustments */
@@ -189,3 +223,305 @@ main {
 
 
 /* resposive code added here */
+
+
+
+
+
+
+/* header css */
+/* @media (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+        left: 30px;
+        
+
+    }
+
+    nav.header-links {
+        display: none;
+        align-items: end;
+
+    }
+
+    nav.header-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2F5EC;
+        z-index: 999;
+
+    }
+
+    nav a {
+        margin: 5px 0;
+        margin-right: 0;
+        padding: 10px;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .order-button {
+        display: none;
+    }
+
+    main {
+        padding-top: 0px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Media Queries for Mobile Responsiveness --- */
+
+/* Extra Small Mobile Devices (up to 320px width) */
+@media screen and (max-width: 320px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .logo {
+        margin-bottom: 8px;
+        margin-left: 0;
+    }
+
+    .logo img {
+        max-width: 80%;
+        /* Ensure logo doesn't overflow */
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 0;
+        align-self: center;
+    }
+
+    .menu-toggle button {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    nav.header-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 8px;
+        background-color: #F2F5EC;
+        border-top: 1px solid #ccc;
+    }
+
+    nav.header-links.open {
+        display: flex;
+    }
+
+    nav.header-links .nav-item {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav.header-links .nav-item a {
+        padding: 10px 15px;
+        justify-content: space-between;
+        font-size: 0.9em;
+    }
+
+    nav.header-links .dropdown-arrow {
+        font-size: 0.7em;
+    }
+
+    nav.header-links .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    nav.header-links .dropdown-content li a {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+
+    .order-button {
+        display: none;
+    }
+}
+
+/* Small Mobile Devices (321px to 480px width) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    header {
+        /* flex-direction: column;
+        align-items: center; */
+        padding: 10px;
+    }
+
+    .logo {
+        /* margin-bottom: 10px; */
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 0;
+        align-self: center;
+    }
+
+    .menu-toggle button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+        margin-right: 20px;
+    }
+
+    nav.header-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #F2F5EC;
+        border-top: 1px solid #ccc;
+    }
+
+    nav.header-links.open {
+        display: flex;
+    }
+
+    nav.header-links .nav-item {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav.header-links .nav-item a {
+        padding: 12px 15px;
+        justify-content: space-between;
+        font-size: 0.95em;
+    }
+
+    nav.header-links .dropdown-arrow {
+        font-size: 0.7em;
+    }
+
+    nav.header-links .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    nav.header-links .dropdown-content li a {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .order-button {
+        display: none;
+    }
+}
+
+/* Medium Mobile Devices (481px to 768px width) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 12px 18px;
+        flex-direction: row;
+        /* Switch back to row for larger phones */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-toggle button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+        margin-right: 20px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        margin-left: 18px;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 18px;
+    }
+
+    nav.header-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #F2F5EC;
+        border-top: 1px solid #ccc;
+    }
+
+    nav.header-links.open {
+        display: flex;
+    }
+
+    nav.header-links .nav-item {
+        margin-left: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav.header-links .nav-item a {
+        padding: 12px 15px;
+        justify-content: space-between;
+    }
+
+    nav.header-links .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .order-button {
+        display: none;
+        /* Or you could show it on larger phones */
+    }
+}
+
+/* Larger Tablets and Small Desktops (1025px to 1200px width) - Optional */
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .menu-toggle {
+        display: none;
+        /* Hide menu toggle on larger screens */
+    }
+
+    nav.header-links {
+        display: flex;
+        /* Show full navigation */
+    }
+
+    nav.header-links .nav-item {
+        margin-left: 20px;
+    }
+
+    .order-button {
+        display: none;
+        margin-right: 30px;
+    }
+}
+
+/* Default styles for larger desktops (above 1200px) remain as your original styles */

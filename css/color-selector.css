@@ -33,11 +33,29 @@
 }
 
 .product-image {
-    width: 80%;
+    /* width: 80%;
     margin: auto;
     margin-top: 60px;
     border-radius: 15px;
-    overflow: hidden;
+    overflow: hidden; */
+
+
+    /* new feature */
+    /* width: 200px; */
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8;
+    /* 3D effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2),
+        0px 0px 20px rgba(255, 255, 255, 0.1) inset;
+    transform: perspective(500px) rotateY(10deg) rotateX(10deg);
+    transition: all 0.5s ease;
+
 }
 
 .product-image img {
@@ -102,16 +120,12 @@
 
 .color-box {
     flex: 1;
-    /* Make each box take equal space */
     height: 50px;
-    /* Adjust height as needed */
     margin: 0 5px;
-    /* Add some spacing between boxes */
     border-radius: 5px;
-    /* Optional: Rounded corners */
 }
 
-.color-box.red {
+/* .color-box.red {
     background-color: rgba(255, 22, 22, 1);
 }
 
@@ -132,7 +146,7 @@
 
 .color-box.dark-blue {
     background-color: rgba(17, 0, 254, 1);
-}
+} */
 
 /* Responsive adjustment (optional) */
 @media (max-width: 480px) {
@@ -235,11 +249,39 @@
 }
 
 .list-category {
-    padding-left: 25px;
+    /* padding-left: 25px; */
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .list-category div {
-    margin: 20px 0px 20px 0px;
+    /* margin: 20px 0px 20px 0px; */
+
+    color: darkblue;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    background-color: #e2e8f0;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.list-category div:hover {
+    background-color: #cbd5e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list-category div:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .list-category div a {

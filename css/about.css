@@ -88,9 +88,6 @@
 
 
 
-
-
-
 /* about-info style*/
 
 .about-info {
@@ -327,8 +324,14 @@
     border-radius: 10px;
     width: 20%;
     height: 150px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
     box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.process-card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
 }
 
 .process-card-2 {
@@ -527,18 +530,57 @@ textarea:focus {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
+
+    .hero-section img {
+        border-radius: 10px;
+        /* Even smaller radius */
+        max-height: 200px;
+        /* Limit image height to save space */
+        object-fit: cover;
+        /* Ensure image scales nicely */
+    }
+
+    .hero-section h1 {
+        font-size: 1em !important;
+        /* Further reduce font size */
+        top: 40%;
+        /* Higher to fit content */
+        line-height: 1.3;
+        left: 15%;
+    }
+
+    .breadcrumbs {
+        top: 35%;
+        /* Adjust to fit below smaller h1 */
+        font-size: 0.6em;
+        left: 6%;
+    }
+}
+
+
+
+
+
+
+/* // about section */
+@media (max-width: 480px) {
     .about-section {
         flex-direction: column;
     }
 
-    .about-images,
-    .about-info {
+    .about-images {
         width: 100%;
     }
 
-    .mission-vision {
-        flex-direction: column;
+    .about-info {
+        width: 400px !important;
+        margin-left: -50px;
+    }
+
+    .about-info p {
+        margin-right: 20px !important;
     }
 
     .process-cards {
@@ -556,5 +598,198 @@ textarea:focus {
     .contact-image,
     .contact-form {
         width: 100%;
+    }
+
+    .mission-vision,
+    .card {
+        padding-right: 5px;
+        margin-right: 10px;
+    }
+}
+
+
+/* //contact section and ordering process */
+@media (max-width: 480px) {
+    .contact-section {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .contact-image img {
+        height: 250px;
+        /* Further reduce image height */
+    }
+
+    .contact-feild h2 {
+        font-size: 24px;
+        /* Smaller heading */
+        margin-bottom: 15px;
+    }
+
+    .contact-information {
+        flex-direction: column;
+        /* Stack icon and text vertically */
+        align-items: flex-start;
+        /* Align to left */
+        gap: 10px;
+        /* Reduce gap */
+    }
+
+    .contact-form {
+        height: 550px;
+        /* Reduce height */
+        border-radius: 15px;
+        width: 400px !important;
+        padding: 0 20px;
+        /* Smaller radius */
+        margin-left: 40px !important;
+
+    }
+
+    .form-group .inside,
+    .form-group .inside-message {
+        width: 370px;
+        /* Full width */
+        padding: 8px;
+        /* Reduce padding */
+    }
+
+    .inside input,
+    .inside-message textarea {
+        padding: 8px;
+        /* Reduce input/textarea padding */
+    }
+
+    .inside-message textarea {
+        height: 80px;
+        /* Reduce textarea height */
+    }
+
+    .contact-form button {
+        width: 100%;
+        /* Full width */
+        padding: 12px;
+        /* Smaller padding */
+        border-radius: 15px;
+        /* Match form radius */
+    }
+
+    .form-group label {
+        margin-left: 0;
+        /* Remove left margin */
+        font-size: 14px;
+        /* Smaller text */
+    }
+
+    .contact-address .form-group label,
+    .contact-message .form-group label {
+        margin-left: 10px;
+        /* Adjust for smaller screens */
+    }
+
+    .contact-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-feild p {
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about-info {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .about-info h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .about-info p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mission-vision .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mission-vision .card-header {
+        margin-left: 15px;
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    .mission-vision .card img {
+        width: 40px;
+    }
+
+    .mission-vision .card p {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .mission-vision .card h3 {
+        font-size: 1.1em;
+    }
+
+    .read-more-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .read-more {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .read-more-arrow {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .contact-info {
+        gap: 8px;
+    }
+
+    .phone-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-text span {
+        font-size: 0.9em;
     }
 }

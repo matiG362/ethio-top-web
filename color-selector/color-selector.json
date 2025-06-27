@@ -1,0 +1,44 @@
+{
+    "SUPER": {
+        "color1": "red",
+        "color2": "blue",
+        "color3": "green",
+        "color4": "yellow",
+        "color5": "black"
+    },
+    "WUBET": {
+        "color1": "purple",
+        "color2": "indigo",
+        "color3": "violet",
+        "color4": "magenta",
+        "color5": "pink"
+    },
+    "ENAMEL": {
+        "color1": "white",
+        "color2": "ivory",
+        "color3": "beige",
+        "color4": "green",
+        "color5": "magenta"
+    },
+    "MICA": {
+        "color1": "purple",
+        "color2": "gray",
+        "color3": "blue",
+        "color4": "black",
+        "color5": "aquamarine"
+    },
+    "GLUE": {
+        "color1": "brown",
+        "color2": "tan",
+        "color3": "khaki",
+        "color4": "azure",
+        "color5": "aquamarine"
+    },
+    "QUARTZ": {
+        "color1": "teal",
+        "color2": "cyan",
+        "color3": "turquoise",
+        "color4": "aquamarine",
+        "color5": "azure"
+    }
+}

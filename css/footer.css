@@ -131,3 +131,178 @@ textarea:focus {
     /* Remove the default outline */
     background-color: transparent;
 }
+
+
+
+/* Responsive Footer Styles */
+
+/* Small Mobile Devices (up to 600px width) */
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 15px;
+        background-position: top center;
+        /* Adjust background image position */
+        background-size: 80% auto;
+        /* Adjust background image size */
+        align-items: center;
+        /* Center content */
+        text-align: center;
+        /* Center text */
+    }
+
+    .upper-footer {
+        flex-direction: column;
+        /* Stack social media and logo */
+        align-items: center;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        /* Stack footer links, colors, newsletter */
+        align-items: center;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links,
+    .popular-colors,
+    .newsletter {
+        width: 100%;
+        /* Take full width in column layout */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .newsletter-inside {
+        /* flex-direction: column; */
+        /* Stack input and button */
+        align-items: center;
+        width: 100%;
+        /* height: auto; */
+        /* padding: 15px; */
+    }
+
+    .newsletter-inside input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .newsletter-inside button {
+        padding-right: 10px;
+    }
+
+    .newsletter .newsletter-inside button img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .powerd {
+        font-size: 0.9em;
+        /* Slightly smaller text */
+    }
+}
+
+/* Medium Mobile Devices (601px to 768px width) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    footer {
+        padding: 20px;
+        background-position: top center;
+        background-size: 70% auto;
+    }
+
+    .upper-footer {
+        flex-direction: row;
+        /* Keep social media and logo in a row */
+        justify-content: space-around;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        flex-direction: row;
+        /* Keep links, colors, newsletter in a row */
+        justify-content: space-around;
+        width: 95%;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        /* Allow wrapping for smaller tablets */
+    }
+
+    .footer-links,
+    .popular-colors,
+    .newsletter {
+        width: 45%;
+        /* Take up more width in two-column layout */
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    /* Adjust newsletter for better fit */
+    .newsletter-inside {
+        /* flex-direction: row;
+        width: 100%;
+        height: 48px;
+        padding-left: 15px; */
+        align-items: center;
+        width: 100%;
+    }
+
+    .newsletter-inside input {
+        width: 70%;
+    }
+
+    .newsletter .newsletter-inside button img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Tablet Devices (769px to 1024px width) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        padding: 25px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .upper-footer {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        width: 90%;
+        margin-bottom: 30px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .footer-links,
+    .popular-colors,
+    .newsletter {
+        width: 30%;
+        /* Adjust width for three columns */
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .newsletter-inside {
+        width: 95%;
+    }
+}
+
+
+
+.input:focus,
+textarea:focus {
+    outline: none;
+    background-color: transparent;
+}
