@@ -1351,7 +1351,7 @@ textarea:focus {
     height: auto;
     display: flex;
     align-items: end;
-    width: 180%;
+    /* width: 180%; */
 }
 
 .product-content {
