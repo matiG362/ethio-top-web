@@ -1,0 +1,38 @@
+{
+    "PUTTY White": [
+        {
+            "id": 1,
+            "size": "5kg",
+            "name": "PUTTY White",
+            "description": "Cement-based compound for smooth walls before painting and bonding ceramic tiles.",
+            "more_detail": "PUTTY White is a cement-based putty, made with gray or white cement, polymers, and additives. It used to create a smooth, durable surface on walls before painting by filling imperfections and crack. This type of putty is also used for strongly bonding ceramic tiles to floors and walls, ensuring resistance to moisture and temperature changes.\n\nCoverage: [10 to 12 square matter /1kg]\nFinish: Matt\nDrying Time: ≈ [6 to 10 hours].\nApplication: using plastic or steel trowel",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "20kg",
+            "name": "PUTTY White",
+            "description": "Cement-based compound for smooth walls before painting and bonding ceramic tiles.",
+            "more_detail": "PUTTY White is a cement-based putty, made with gray or white cement, polymers, and additives. It used to create a smooth, durable surface on walls before painting by filling imperfections and crack. This type of putty is also used for strongly bonding ceramic tiles to floors and walls, ensuring resistance to moisture and temperature changes.\n\nCoverage: [10 to 12 square matter /1kg]\nFinish: Matt\nDrying Time: ≈ [6 to 10 hours].\nApplication: using plastic or steel trowel",
+            "image": null
+        }
+    ],
+    "PUTTY Gray": [
+        {
+            "id": 1,
+            "size": "5kg",
+            "name": "PUTTY Gray",
+            "description": "Cement-based compound for smooth walls before painting and bonding ceramic tiles.",
+            "more_detail": "PUTTY Gray is a cement-based putty, made with gray or white cement, polymers, and additives. It used to create a smooth, durable surface on walls before painting by filling imperfections and crack. This type of putty is also used for strongly bonding ceramic tiles to floors and walls, ensuring resistance to moisture and temperature changes.\n\nCoverage: [10 to 12 square matter /1kg]\nFinish: Matt\nDrying Time: ≈ [6 to 10 hours].\nApplication: using plastic or steel trowel",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "20kg",
+            "name": "PUTTY Gray",
+            "description": "Cement-based compound for smooth walls before painting and bonding ceramic tiles.",
+            "more_detail": "PUTTY Gray is a cement-based putty, made with gray or white cement, polymers, and additives. It used to create a smooth, durable surface on walls before painting by filling imperfections and crack. This type of putty is also used for strongly bonding ceramic tiles to floors and walls, ensuring resistance to moisture and temperature changes.\n\nCoverage: [10 to 12 square matter /1kg]\nFinish: Matt\nDrying Time: ≈ [6 to 10 hours].\nApplication: using plastic or steel trowel",
+            "image": null
+        }
+    ]
+}

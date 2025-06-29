@@ -30,3 +30,10 @@
     color: rgba(15, 77, 156, 1);
     font-weight: 600;
 }
+
+.product-description-text {
+    white-space: pre-wrap;
+    /* This is the key: it preserves newlines and wraps text */
+    word-wrap: break-word;
+    /* Good practice for long words breaking outside container */
+}

@@ -1,0 +1,2518 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F5EC;
+    /* Background color */
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Header Styles */
+/* Header Styles - Original */
+header {
+    background-color: #F2F5EC;
+    color: #184a98;
+    padding: 15px 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20%;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Added for wrapping on smaller screens */
+}
+
+.menu-toggle {
+    display: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav .nav-item {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    color: #104D9D;
+    margin-right: 15px;
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
+.logo .logo-img {
+    margin-left: 29px;
+    background-color: #F2F5EC;
+}
+
+.dropdown-arrow {
+    font-size: 0.8em;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F2F5EC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #F2F5EC;
+}
+
+.nav-item:hover .dropdown-content,
+.nav-item.active .dropdown-content {
+    display: block;
+}
+
+.nav-item:hover .dropdown-arrow,
+.nav-item.active .dropdown-arrow {
+    transform: rotate(90deg);
+} */
+
+.order-button {
+    margin-right: 28px;
+    background-color: rgba(15, 77, 156, 1);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 35px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+    /* Prevent wrapping */
+}
+
+.order-button .order-button-arrow {
+    font-size: 25px;
+    margin: auto;
+    /* margin-bottom: 7px; */
+}
+
+
+/* 
+@media (max-width: 480px) {
+    .logo .logo-img {
+        max-width: 30px !important;
+        height: auto !important;
+        margin-left: 10px !important;
+    }
+
+    .logo img {
+        max-width: 75px !important;
+        height: auto !important;
+        margin-left: 10px !important;
+    }
+} */
+
+.logo .logo-img {
+    margin-left: 29px;
+    background-color: #F2F5EC;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img:last-child {
+    /* Styling for the last image on larger screens if needed */
+}
+
+
+
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Content on the header Styles */
+main {
+    padding: 20px;
+}
+
+.hero-section {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.hero-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 0 30px 0;
+    /* Add margin to the bottom of h1 */
+    z-index: 1;
+}
+
+.breadcrumbs {
+    position: absolute;
+    bottom: auto;
+    /* Remove the bottom property */
+    top: 55%;
+    /* Position relative to the top of the hero-section */
+    left: 13.5%;
+    transform: translateY(1.5em);
+    /* Adjust the position relative to the h1 */
+    color: white;
+    font-size: 1em;
+    z-index: 1;
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* resposive code added here */
+
+
+
+
+
+
+/* header css */
+/* @media (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+        left: 30px;
+        
+
+    }
+
+    nav.header-links {
+        display: none;
+        align-items: end;
+
+    }
+
+    nav.header-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2F5EC;
+        z-index: 999;
+
+    }
+
+    nav a {
+        margin: 5px 0;
+        margin-right: 0;
+        padding: 10px;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .order-button {
+        display: none;
+    }
+
+    main {
+        padding-top: 0px;
+    }
+} */
+
+
+/* Hero Section Styles */
+.hero-section h1 {
+    left: 34%;
+    text-align: start;
+}
+
+.breadcrumbs {
+    top: 63%;
+    left: 18.5%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.breadcrumbs-inside img {
+    display: inline;
+    border-radius: 0px;
+    width: 40px;
+}
+
+.order-button-arrow {
+    font-size: 25px;
+    margin-left: auto;
+    margin-bottom: 7px;
+}
+
+.breadcrumbs-inside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-button-one {
+    border: 1px solid white;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+.experience-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    background-color: #184a98;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 20px;
+
+}
+
+.year {
+    font-size: 40px;
+}
+
+.word {
+    margin-left: 10px;
+}
+
+.experience-holder {
+    background-image: url("../home-image/Group\ 8581.png");
+    background-size: cover;
+    /* Optional: adjust as needed */
+    background-repeat: no-repeat;
+    /* Optional: adjust as needed */
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Why Choose Us Section */
+
+/* 
+.why-choose-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.why-choose-us-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.why-choose-us-images>div:first-child {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    position: relative;
+}
+
+.why-choose-us-images>div:first-child>div:first-child {
+    grid-row: 1;
+    z-index: 1;
+
+}
+
+.why-choose-us-images>div:first-child>.experience-holder {
+    position: absolute;
+
+    top: 250px;
+    left: -40px;
+    right: -10px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.why-choose-us-images>div:first-child>.experience-badge {
+
+}
+
+.why-choose-us-images>div:last-child {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    position: relative;
+}
+
+.why-choose-us-images>div:last-child>div:first-child {
+    grid-row: 1;
+}
+
+.why-choose-us-images>div:last-child>div:last-child {
+    grid-row: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: -80px;
+    margin-right: 40px;
+    margin-top: -40px;
+}
+
+.why-choose-us-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .why-choose-us-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.quality-section {
+    display: flex;
+    gap: 17px;
+}
+
+.quality-item-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quality-title {
+    font-size: 18px;
+} */
+.why-choose-us {
+    margin-top: 80px;
+}
+
+
+.why-choose-us-container {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content: end;
+    gap: 20px;
+}
+
+.why-choose-us-images {
+    width: 60%;
+    display: grid block;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 30px;
+}
+
+.image-4 {
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.why-choose-us-content p {
+    color: rgba(114, 114, 114, 1);
+}
+
+.black {
+    font-size: 50px;
+    margin-bottom: 0px;
+
+}
+
+.blue {
+    font-size: 50px;
+    color: #005599;
+    margin-top: 0px;
+}
+
+.quality-section {
+    display: flex;
+}
+
+.quality-item-header {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.cta-button-five {
+    border: 1px solid white;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    background-color: rgba(15, 77, 156, 1);
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product Section Styles */
+
+
+.product-section {
+    width: 95%;
+}
+
+.container {
+    background-color: white;
+    border-radius: 25px;
+    padding: 80px;
+}
+
+.container p {
+    text-align: center;
+    color: rgba(15, 77, 156, 1);
+}
+
+.container h1 {
+    text-align: center;
+    color: rgba(15, 77, 156, 1);
+    margin-bottom: 30px;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.container-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.product-card {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.product-card .product-card-image {
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.product-content-header p {
+    text-align: left;
+    color: rgba(114, 114, 114, 1);
+    font-weight: 400;
+}
+
+.product-content-header h4 {
+    color: rgba(15, 77, 156, 1);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ Section Styles */
+.faq {
+    width: 86%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.faq-container {
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: end;
+    padding-top: 40px;
+}
+
+.faq-images-one {
+    width: 21%;
+}
+
+.faq-images-two {
+    width: 21%;
+}
+
+.faq-images-one img {
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+.faq-images-two div img {
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.faq-content {
+    width: 48%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+
+.faq-content-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-content-header p {
+    color: rgba(15, 77, 156, 1);
+    font-weight: 600;
+}
+
+.faq-content h1 {
+    margin-top: 0px;
+    color: rgba(15, 77, 156, 1);
+    font-size: 2em;
+    margin-bottom: 0px;
+    text-align: start;
+}
+
+.faq-paragraph p {
+    margin-top: 0px;
+    color: rgba(114, 114, 114, 1);
+    font-weight: 400;
+}
+
+.faq-phone-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq-phone-icon img {
+    width: 25px;
+}
+
+.faq-phone-number p {
+    color: rgba(114, 114, 114, 1);
+    font-weight: 400;
+}
+
+.faq-phone-number h4 {
+    color: rgba(15, 77, 156, 1);
+    font-weight: 600;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    /* padding: 5px; */
+}
+
+.faq-question {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(15, 77, 156, 1);
+    font-weight: 600;
+}
+
+.faq-answer {
+    padding: 0 10px;
+    display: none;
+    /* Initially hide the answer */
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    color: rgba(114, 114, 114, 1);
+    font-weight: 400;
+}
+
+.faq-answer.active {
+    display: block;
+    /* Show the answer when active */
+    max-height: 500px;
+    /* Adjust as needed */
+    padding: 10px;
+}
+
+.faq-toggle {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-out;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    color: #005599;
+}
+
+.faq-toggle.active {
+    transform: rotate(-90deg);
+    background-color: rgba(15, 77, 156, 1);
+    color: white;
+}
+
+
+
+.upper-mid-image img {
+    width: 100%;
+}
+
+
+
+
+/* Testimonial Styles */
+/* .testimonial {
+
+} */
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: transparent;
+    margin: auto;
+}
+
+.testimonial-image {
+    width: 48%;
+}
+
+.testimonial-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.testimonial-content {
+    margin-left: -300px;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 80px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content p {
+    /* font-style: italic; */
+    margin-bottom: 20px;
+    color: rgba(114, 114, 114, 1);
+    text-align: start;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: rgba(15, 77, 156, 1);
+}
+
+
+/*middle*/
+.middle-image {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.middle-image img {
+    width: 95%;
+    margin-bottom: 70px;
+}
+
+/* Ordering Process Styles */
+.ordering-process {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+    background-image: none;
+    margin: 0px 30px;
+}
+
+.ordering-process .container {
+    padding: 0px 80px 40px 80px;
+}
+
+.ordering-process h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.process-step {
+    margin-right: 40px;
+    width: 28%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    box-shadow: 6px 8px 15.2px 0px rgba(0, 0, 0, 0.25);
+    text-align: start;
+}
+
+.process-step p {
+    text-align: start;
+    color: rgba(114, 114, 114, 1);
+}
+
+.process-step h3 {
+    color: rgba(15, 77, 156, 1);
+    font-weight: 700;
+}
+
+
+
+
+
+/* Call to Action Section */
+.cta-section {
+    background-color: rgba(15, 77, 156, 1);
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    margin-top: -120px;
+
+}
+
+.cta-section .container-two {
+    background-color: rgba(15, 77, 156, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    border-radius: 40px;
+    background-image: url("/home-image/Vector\(3\).png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.cta-section .container-two .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.description .description-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* .description .both-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+.container-two .description h1 {
+    color: white;
+    text-align: start;
+    margin: 0px 0px 10px 0px;
+}
+
+.container-two .description p {
+    color: white;
+    text-align: start;
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cta-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+    grid-template-columns: 300px auto;
+    margin-bottom: 30px;
+    padding: 0px 30px;
+}
+
+.cta-item {
+    background-color: #005599;
+    border-radius: 5px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+
+.cta-item-image img {
+    margin: 0px 20px;
+}
+
+.cta-item-des h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.contact-section {
+    margin-top: 40px;
+    gap: 50px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #184a98;
+    color: white;
+    padding: 20px;
+    /* height: 430px; */
+    margin-top: 20px;
+    background-image: url('/images/Vector\(1\).png');
+    /* Replace with your image path */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    background-position: center;
+    /* Center the image */
+    background-size: contain;
+    /* Scale image to fit within the div */
+    display: flex;
+    flex-direction: column;
+    /* Stack sections vertically */
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.f img,
+.x img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* Space between footer links, colors, and newsletter */
+    width: 80%;
+    /* Take full width */
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-links,
+.popular-colors,
+.newsletter {
+    display: inline-block;
+    /* Display divs horizontally */
+    vertical-align: top;
+    /* Align divs to the top */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-links a,
+.popular-colors a {
+    display: block;
+    /* Display anchors vertically */
+    margin-bottom: 12px;
+    /* Add space between anchors */
+    color: white;
+    text-decoration: none;
+}
+
+
+.newsletter .newsletter-inside button img {
+    width: 52px;
+    height: 52px;
+}
+
+.newsletter-inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3368AC;
+    border-radius: 25px;
+    border: none;
+    width: 90%;
+    padding-left: 20px;
+    height: 48px;
+}
+
+.newsletter input::placeholder {
+    color: white;
+}
+
+.newsletter-inside input {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.newsletter button {
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    padding-right: 0px;
+}
+
+/* .newsletter button :active {
+    border: none;
+} */
+
+.powerd {
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    /* Remove the default outline */
+    background-color: transparent;
+}
+
+
+
+/* Responsive Footer Styles */
+
+/* Small Mobile Devices (up to 600px width) */
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 15px;
+        background-position: top center;
+        /* Adjust background image position */
+        background-size: 80% auto;
+        /* Adjust background image size */
+        align-items: center;
+        /* Center content */
+        text-align: center;
+        /* Center text */
+    }
+
+    .upper-footer {
+        flex-direction: column;
+        /* Stack social media and logo */
+        align-items: center;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        /* Stack footer links, colors, newsletter */
+        align-items: center;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links,
+    .popular-colors,
+    .newsletter {
+        width: 100%;
+        /* Take full width in column layout */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .newsletter-inside {
+        /* flex-direction: column; */
+        /* Stack input and button */
+        align-items: center;
+        width: 100%;
+        /* height: auto; */
+        /* padding: 15px; */
+    }
+
+    .newsletter-inside input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .newsletter-inside button {
+        padding-right: 10px;
+    }
+
+    .newsletter .newsletter-inside button img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .powerd {
+        font-size: 0.9em;
+        /* Slightly smaller text */
+    }
+}
+
+/* Medium Mobile Devices (601px to 768px width) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    footer {
+        padding: 20px;
+        background-position: top center;
+        background-size: 70% auto;
+    }
+
+    .upper-footer {
+        flex-direction: row;
+        /* Keep social media and logo in a row */
+        justify-content: space-around;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        flex-direction: row;
+        /* Keep links, colors, newsletter in a row */
+        justify-content: space-around;
+        width: 95%;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        /* Allow wrapping for smaller tablets */
+    }
+
+    .footer-links,
+    .popular-colors,
+    .newsletter {
+        width: 45%;
+        /* Take up more width in two-column layout */
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    /* Adjust newsletter for better fit */
+    .newsletter-inside {
+        /* flex-direction: row;
+        width: 100%;
+        height: 48px;
+        padding-left: 15px; */
+        align-items: center;
+        width: 100%;
+    }
+
+    .newsletter-inside input {
+        width: 70%;
+    }
+
+    .newsletter .newsletter-inside button img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Tablet Devices (769px to 1024px width) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        padding: 25px;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .upper-footer {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        width: 90%;
+        margin-bottom: 30px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .footer-links,
+    .popular-colors,
+    .newsletter {
+        width: 30%;
+        /* Adjust width for three columns */
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .newsletter-inside {
+        width: 95%;
+    }
+}
+
+
+
+.input:focus,
+textarea:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+/* Products Section Styles */
+.products-section {
+    padding: 50px 0;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    gap: 20px;
+    /* align-items: center; */
+    background-color: #ffffff;
+    border-radius: 20px;
+    /* padding: 20px; */
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-image {
+    background-color: gray;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    width: 40%;
+    border-radius: 20px 0px 0px 20px;
+    /* margin: -20px 0px -20px -20px; */
+
+}
+
+.product-card-image img {
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    align-items: end;
+    width: 180%;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.product-content-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-content h3 {
+    margin-top: 0;
+}
+
+.product-content a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgba(15, 77, 156, 1);
+}
+
+.product-card p {
+    color: #555;
+}
+
+.product-card a {
+    display: inline-block;
+    /* margin-top: 15px; */
+    color: rgba(15, 77, 156, 1);
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+/*responsive goes here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* See More Button Styles */
+.line-with-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 70px auto;
+    position: relative;
+}
+
+.line-with-button::before,
+.line-with-button::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.see-more-button {
+    display: block;
+    margin: 30px auto;
+    padding: 20px 25px;
+    background-color: rgba(15, 77, 156, 1);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    width: fit-content;
+    border: none;
+    margin: 0 10px;
+    z-index: 1;
+}
+
+/* Optional hover effect */
+.see-more-button:hover {
+    background-color: #0056b3;
+}
+
+.middle-image {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.middle-image img {
+    width: 100%;
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    margin-bottom: 0px;
+}
+
+
+
+/* about-us-container section Styles */
+
+.about-us-container {
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* About Section Styles */
+.about-section {
+    display: flex;
+    gap: 20px;
+}
+
+
+.about-images {
+    width: 30%;
+}
+
+
+.about-image-left {
+    position: relative;
+    /* For absolute positioning of the second image */
+    display: flex;
+    /* use flexbox for vertical gap */
+    flex-direction: column;
+    /* images stack vertically */
+    align-items: center;
+    /* center images horizontally */
+    gap: 100px;
+    /* Adjust gap as needed */
+}
+
+.about-image-left img:nth-child(2) {
+    position: relative;
+    /* make the second image relative to the first */
+    width: 80%;
+    /* Adjust width as needed */
+    height: auto;
+}
+
+.about-image-left img:nth-child(1) {
+    width: 100%;
+    /* make the first image full width */
+    height: auto;
+}
+
+.about-images .experience-badge {
+    width: 90%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.about-images .experience-badge .experience-years {
+    margin-right: 15px;
+    font-size: 40px;
+}
+
+.about-images .experience-badge .experience-text {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about-images .experience-badge .experience-text .experience-text-bottom {
+    margin-top: 5px;
+    /* Adjust the gap as needed */
+    display: inline-block;
+    /* allows margin and width to work */
+}
+
+.about-images img {
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* about-info style*/
+
+.about-info {
+    width: 60%;
+    margin-left: 60px;
+}
+
+.about-info-text {
+    display: flex;
+    /* Use flexbox for side-by-side layout */
+    align-items: center;
+    /* Vertically align items */
+    gap: 10px;
+    /* Add space between the image and text (adjust as needed) */
+    color: #184a98;
+}
+
+.about-info-text img {
+    /* Optional: Style the image if needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.about-info h1 {
+    color: #184a98;
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.about-info p {
+    color: rgba(114, 114, 114, 1);
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.experience-badge {
+    background-color: #184a98;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+
+
+
+/* Our Mission/Vision */
+.mission-vision {
+    display: flex;
+    gap: 20px;
+}
+
+.mission-vision .card {
+    width: 50%;
+    background-color: #F2F5EC;
+    border: 1px solid rgba(227, 219, 216, 1);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.mission-vision .card-header {
+    display: flex;
+    /* Make image and h3 side by side */
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 25px;
+    margin-top: 15px;
+    /* Vertically align image and h3 */
+    gap: 10px;
+    /* Space between image and h3 */
+}
+
+.mission-vision .card img {
+    margin-right: 10px;
+    /* Optional: Style the image if needed */
+    width: 50px;
+    /* Example: Adjust image width */
+    height: auto;
+}
+
+.mission-vision .card p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    margin-left: 7px;
+}
+
+.mission-vision .card i {
+    font-size: 2em;
+    color: #184a98;
+}
+
+.mission-vision .card h3 {
+    color: #184a98;
+}
+
+
+
+
+
+
+.read-more-contact {
+    display: flex;
+    /* Arrange read more and contact info in a row */
+    align-items: center;
+    /* Vertically align items */
+    gap: 35px;
+    /* Space between read more and contact info */
+}
+
+.read-more {
+    border: 1px solid rgba(15, 77, 156, 1);
+    border-radius: 35px;
+    /* Add border */
+    padding: 12px 27px;
+    /* Add padding */
+    text-decoration: none;
+    /* Remove underline */
+    color: #184a98;
+    /* Text color */
+    display: inline-flex;
+    /* Make read more a flex container */
+    align-items: center;
+    /* Vertically align text and arrow */
+    gap: 5px;
+    /* Space between text and arrow */
+}
+
+.read-more-arrow {
+    font-size: 25px;
+    margin-bottom: 7px;
+    /* Adjust arrow size */
+}
+
+.contact-info {
+    display: flex;
+    /* Arrange phone icon and text in a row */
+    align-items: center;
+    /* Vertically align items */
+    gap: 10px;
+    /* Space between icon and text */
+    color: #184a98;
+}
+
+.phone-icon {
+    width: 50px;
+    /* Adjust icon size */
+    height: 50px;
+    border-radius: 50%;
+    /* Make it circular */
+    background-color: rgba(15, 77, 156, 1);
+    /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-icon img {
+    max-width: 70%;
+    /* Adjust image size inside circle */
+    max-height: 70%;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    /* Stack need help and phone number vertically */
+}
+
+.contact-text span:first-child {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    /* Adjust need help font size */
+}
+
+.contact-text span:last-child {
+    font-size: 1em;
+    /* Adjust phone number font size */
+}
+
+
+
+
+
+
+
+
+/* Ordering Process */
+.ordering-process {
+    /* height: 430px; */
+    border: 1px solid rgba(227, 219, 216, 1);
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    text-align: center;
+    background-image: url('/images/Vector.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ordering-process-text {
+    display: block;
+    padding-top: 70px;
+    color: rgba(15, 77, 156, 1);
+}
+
+.ordering-process h2 {
+    color: #184a98;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.process-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.process-card {
+    text-align: justify;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.process-card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.process-card-2 {
+    margin-top: 40px;
+}
+
+.process-card p {
+    color: #184a98;
+}
+
+.process-card-2 p {
+    color: #184a98;
+}
+
+
+.middle-image {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.middle-image img {
+    width: 70%;
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+    margin-bottom: 60px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-image img {
+    height: 550px;
+}
+
+.contact-feild {
+    margin-left: 50px;
+}
+
+.contact-information {
+    display: flex;
+    /* Arrange phone icon and text in a row */
+    align-items: center;
+    /* Vertically align items */
+    gap: 15px;
+    /* Space between icon and text */
+    color: #184a98;
+}
+
+.contact-feild p {
+    display: flex;
+}
+
+.contact-feild h2 {
+    color: #184a98;
+    text-align: left;
+    /* Left-align the heading */
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.contact-form {
+    background-color: white;
+    border: 1px solid #F2F5EC;
+    border-radius: 25px;
+    height: 500px;
+    width: 600px;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.form-group .inside {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    /* Gap between form-groups */
+    border: 1px solid #ccc;
+    /* Border around input and image */
+    border-radius: 30px;
+    /* Optional: Rounded corners */
+    padding: 10px;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.form-group .inside-message {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.form-group .inside-message img {
+    margin-right: 5px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 20px;
+    color: #104D9D;
+    margin-bottom: 8px;
+}
+
+.contact-address .form-group label {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.contact-message .form-group label {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.inside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.inside input {
+    flex: 1;
+    /* Make input take up remaining space */
+    padding: 10px;
+    border: none;
+    /* Remove input border */
+    box-sizing: border-box;
+}
+
+.inside-message textarea {
+    flex: 1;
+    /* Make input take up remaining space */
+    padding: 10px;
+    border: none;
+    /* Remove input border */
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.contact-form button {
+    width: 90%;
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+    background-color: rgba(15, 77, 156, 1);
+    color: white;
+    border-radius: 20px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    /* Remove the default outline */
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+
+    .hero-section img {
+        border-radius: 10px;
+        /* Even smaller radius */
+        max-height: 200px;
+        /* Limit image height to save space */
+        object-fit: cover;
+        /* Ensure image scales nicely */
+    }
+
+    .hero-section h1 {
+        font-size: 1em !important;
+        /* Further reduce font size */
+        top: 40%;
+        /* Higher to fit content */
+        line-height: 1.3;
+        left: 15%;
+    }
+
+    .breadcrumbs {
+        top: 35%;
+        /* Adjust to fit below smaller h1 */
+        font-size: 0.6em;
+        left: 6%;
+    }
+}
+
+
+
+
+
+
+/* // about section */
+@media (max-width: 480px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-images {
+        width: 100%;
+    }
+
+    .about-info {
+        width: 400px !important;
+        margin-left: -50px;
+    }
+
+    .about-info p {
+        margin-right: 20px !important;
+    }
+
+    .process-cards {
+        flex-direction: column;
+    }
+
+    .process-card {
+        width: 100%;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-image,
+    .contact-form {
+        width: 100%;
+    }
+
+    .mission-vision,
+    .card {
+        padding-right: 5px;
+        margin-right: 10px;
+    }
+}
+
+
+/* //contact section and ordering process */
+@media (max-width: 480px) {
+    .contact-section {
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .contact-image img {
+        height: 250px;
+        /* Further reduce image height */
+    }
+
+    .contact-feild h2 {
+        font-size: 24px;
+        /* Smaller heading */
+        margin-bottom: 15px;
+    }
+
+    .contact-information {
+        flex-direction: column;
+        /* Stack icon and text vertically */
+        align-items: flex-start;
+        /* Align to left */
+        gap: 10px;
+        /* Reduce gap */
+    }
+
+    .contact-form {
+        height: 550px;
+        /* Reduce height */
+        border-radius: 15px;
+        width: 400px !important;
+        padding: 0 20px;
+        /* Smaller radius */
+        margin-left: 40px !important;
+
+    }
+
+    .form-group .inside,
+    .form-group .inside-message {
+        width: 370px;
+        /* Full width */
+        padding: 8px;
+        /* Reduce padding */
+    }
+
+    .inside input,
+    .inside-message textarea {
+        padding: 8px;
+        /* Reduce input/textarea padding */
+    }
+
+    .inside-message textarea {
+        height: 80px;
+        /* Reduce textarea height */
+    }
+
+    .contact-form button {
+        width: 100%;
+        /* Full width */
+        padding: 12px;
+        /* Smaller padding */
+        border-radius: 15px;
+        /* Match form radius */
+    }
+
+    .form-group label {
+        margin-left: 0;
+        /* Remove left margin */
+        font-size: 14px;
+        /* Smaller text */
+    }
+
+    .contact-address .form-group label,
+    .contact-message .form-group label {
+        margin-left: 10px;
+        /* Adjust for smaller screens */
+    }
+
+    .contact-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-feild p {
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about-info {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .about-info h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .about-info p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mission-vision .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mission-vision .card-header {
+        margin-left: 15px;
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    .mission-vision .card img {
+        width: 40px;
+    }
+
+    .mission-vision .card p {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .mission-vision .card h3 {
+        font-size: 1.1em;
+    }
+
+    .read-more-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .read-more {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .read-more-arrow {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .contact-info {
+        gap: 8px;
+    }
+
+    .phone-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-text span {
+        font-size: 0.9em;
+    }
+}
+
+
+/* --- Media Queries for Mobile Responsiveness --- */
+
+/* Extra Small Mobile Devices (up to 320px width) */
+@media screen and (max-width: 320px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .logo {
+        margin-bottom: 8px;
+        margin-left: 0;
+    }
+
+    .logo img {
+        max-width: 80%;
+        /* Ensure logo doesn't overflow */
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 0;
+        align-self: center;
+    }
+
+    .menu-toggle button {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    nav.header-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 8px;
+        background-color: #F2F5EC;
+        border-top: 1px solid #ccc;
+    }
+
+    nav.header-links.open {
+        display: flex;
+    }
+
+    nav.header-links .nav-item {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav.header-links .nav-item a {
+        padding: 10px 15px;
+        justify-content: space-between;
+        font-size: 0.9em;
+    }
+
+    nav.header-links .dropdown-arrow {
+        font-size: 0.7em;
+    }
+
+    nav.header-links .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    nav.header-links .dropdown-content li a {
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+
+    .order-button {
+        display: none;
+    }
+}
+
+/* Small Mobile Devices (321px to 480px width) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    header {
+        /* flex-direction: column;
+        align-items: center; */
+        padding: 10px;
+    }
+
+    .logo {
+        /* margin-bottom: 10px; */
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 0;
+        align-self: center;
+    }
+
+    .menu-toggle button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+        margin-right: 20px;
+    }
+
+    nav.header-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #F2F5EC;
+        border-top: 1px solid #ccc;
+    }
+
+    nav.header-links.open {
+        display: flex;
+    }
+
+    nav.header-links .nav-item {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav.header-links .nav-item a {
+        padding: 12px 15px;
+        justify-content: space-between;
+        font-size: 0.95em;
+    }
+
+    nav.header-links .dropdown-arrow {
+        font-size: 0.7em;
+    }
+
+    nav.header-links .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    nav.header-links .dropdown-content li a {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .order-button {
+        display: none;
+    }
+}
+
+/* Medium Mobile Devices (481px to 768px width) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 12px 18px;
+        flex-direction: row;
+        /* Switch back to row for larger phones */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-toggle button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+        margin-right: 20px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        margin-left: 18px;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 18px;
+    }
+
+    nav.header-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #F2F5EC;
+        border-top: 1px solid #ccc;
+    }
+
+    nav.header-links.open {
+        display: flex;
+    }
+
+    nav.header-links .nav-item {
+        margin-left: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav.header-links .nav-item a {
+        padding: 12px 15px;
+        justify-content: space-between;
+    }
+
+    nav.header-links .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .order-button {
+        display: none;
+        /* Or you could show it on larger phones */
+    }
+}
+
+/* Larger Tablets and Small Desktops (1025px to 1200px width) - Optional */
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .menu-toggle {
+        display: none;
+        /* Hide menu toggle on larger screens */
+    }
+
+    nav.header-links {
+        display: flex;
+        /* Show full navigation */
+    }
+
+    nav.header-links .nav-item {
+        margin-left: 20px;
+    }
+
+    .order-button {
+        display: none;
+        margin-right: 30px;
+    }
+}
+
+
+/* Default styles for larger desktops (above 1200px) remain as your original styles */

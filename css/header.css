@@ -15,7 +15,8 @@ header {
     color: #184a98;
     padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 20%;
     align-items: center;
     flex-wrap: wrap;
     /* Added for wrapping on smaller screens */

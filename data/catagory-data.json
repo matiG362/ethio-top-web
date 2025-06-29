@@ -2,43 +2,99 @@
     {
         "id": 1,
         "name": "SUPER",
-        "description": "Lorem",
-        "image": "/products-image/paint-number1.png",
+        "description": "Water-based paint for interior/exterior walls/ceilings; forms a durable, smooth finish.",
+        "image": "/products-image/paint-super.png",
         "link": "/products/super"
-    },
-    {
-        "id": 2,
-        "name": "WUBET",
-        "description": "Lorem",
-        "image": "../products-image/paint-number1.png",
-        "link": "/products/wubet"
     },
     {
         "id": 3,
         "name": "ENAMIL",
-        "description": "Lorem",
-        "image": "../products-image/paint-number1.png",
+        "description": "Oil-based paint for a hard, glossy, durable finish on various materials.",
+        "image": "../products-image/paint-enamel.png",
         "link": "/products/enamil"
     },
     {
         "id": 4,
         "name": "GLUE",
-        "description": "Lorem",
+        "description": "Water-based adhesive for strong bonds on porous materials like wood and paper.",
         "image": "../products-image/paint-number1.png",
         "link": "/products/glue"
     },
     {
         "id": 5,
         "name": "QUARTZ",
-        "description": "Lorem",
+        "description": "Textured paint with quartz for a rough, durable, stone-like exterior finish.",
         "image": "../products-image/paint-number1.png",
         "link": "/products/quartz"
     },
     {
         "id": 6,
         "name": "MICA",
-        "description": "Lorem",
+        "description": "Mica-containing paint for shimmering, reflective effects on various surfaces.",
         "image": "../products-image/paint-number1.png",
         "link": "/products/mica"
+    },
+    {
+        "id": 7,
+        "name": "POWDER_QUARTZ",
+        "description": "A finely ground form of quartz for its high purity, hardness, and resistance to chemical weathering.",
+        "image": "../products-image/paint-quartz.png",
+        "link": "/products/powder-quartz"
+    },
+    {
+        "id": 8,
+        "name": "STONE_PAINTS",
+        "description": "Textured coating providing a natural stone look and durability for surfaces.",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/stone-paints"
+    },
+    {
+        "id": 9,
+        "name": "CONEXTRA",
+        "description": "High-quality acrylic exterior coating with texture and strong environmental resistance.",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/conextra"
+    },
+    {
+        "id": 10,
+        "name": "TEXTURE",
+        "description": "specialized type of paint designed to add depth and dimension to walls and ceilings.",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/texture"
+    },
+    {
+        "id": 11,
+        "name": "PRIMER",
+        "description": "Preparatory coating improving adhesion, durability, and smoothness before painting.",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/primer"
+    },
+    {
+        "id": 12,
+        "name": "VARNISH",
+        "description": "Transparent coating enhancing material durability and appearance with gloss or sheen.",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/varnish"
+    },
+    {
+        "id": 13,
+        "name": "ANTIRUST",
+        "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/antirust"
+    },
+    {
+        "id": 14,
+        "name": "PUTTY",
+        "description": "Cement-based compound for smooth walls before painting and bonding ceramic tiles.",
+        "image": "../products-image/paint-number1.png",
+        "link": "/products/putty"
+    },
+    {
+        "id": 2,
+        "name": "WUBET",
+        "description": "Lorem",
+        "image": "../products-image/paint-wubet.png",
+        "link": "/products/wubet"
     }
 ]

@@ -1,0 +1,38 @@
+{
+    "POWDER QUARTZ Fine": [
+        {
+            "id": 1,
+            "size": "25kg",
+            "name": "POWDER QUARTZ Fine",
+            "description": "A finely ground form of quartz for its high purity, hardness, and resistance to chemical weathering",
+            "more_detail": "POWDER QUARTZ Fine is a finely ground form of quartz, one of the most abundant minerals on Earth. It is composed almost entirely of silicon dioxide and is known for its high purity, hardness, and resistance to chemical weathering\n\nCoverage: [10 to 12 square m /25kg ]\nFinish: GLOSS\nDrying Time: ≈ [6 to 10] hours.\nApplication: using plastic or steel trowel",
+            "image": "/products-image/paint-powder.png"
+        },
+        {
+            "id": 2,
+            "size": "50kg",
+            "name": "POWDER QUARTZ Fine",
+            "description": "A finely ground form of quartz for its high purity, hardness, and resistance to chemical weathering",
+            "more_detail": "POWDER QUARTZ Fine is a finely ground form of quartz, one of the most abundant minerals on Earth. It is composed almost entirely of silicon dioxide and is known for its high purity, hardness, and resistance to chemical weathering\n\nCoverage: [10 to 12 square m /25kg ]\nFinish: GLOSS\nDrying Time: ≈ [6 to 10] hours.\nApplication: using plastic or steel trowel",
+            "image": "/products-image/paint-powder.png"
+        }
+    ],
+    "POWDER QUARTZ Medium": [
+        {
+            "id": 1,
+            "size": "25kg",
+            "name": "POWDER QUARTZ Medium",
+            "description": "A finely ground form of quartz for its high purity, hardness, and resistance to chemical weathering",
+            "more_detail": "POWDER QUARTZ Medium is a finely ground form of quartz, one of the most abundant minerals on Earth. It is composed almost entirely of silicon dioxide and is known for its high purity, hardness, and resistance to chemical weathering\n\nCoverage: [10 to 12 square m /25kg ]\nFinish: GLOSS\nDrying Time: ≈ [6 to 10] hours.\nApplication: using plastic or steel trowel",
+            "image": "/products-image/paint-powder.png"
+        },
+        {
+            "id": 2,
+            "size": "50kg",
+            "name": "POWDER QUARTZ Medium",
+            "description": "A finely ground form of quartz for its high purity, hardness, and resistance to chemical weathering",
+            "more_detail": "POWDER QUARTZ Medium is a finely ground form of quartz, one of the most abundant minerals on Earth. It is composed almost entirely of silicon dioxide and is known for its high purity, hardness, and resistance to chemical weathering\n\nCoverage: [10 to 12 square m /25kg ]\nFinish: GLOSS\nDrying Time: ≈ [6 to 10] hours.\nApplication: using plastic or steel trowel",
+            "image": "/products-image/paint-powder.png"
+        }
+    ]
+}

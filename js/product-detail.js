@@ -55,17 +55,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 product_content_footer.classList.add('product-content-footer');
 
                 const product_card_image_img = document.createElement('img');
-
-                product_card_image_img.src = `${productFound.image} `;
+                product_card_image_img.src = `${productFound.image}`; // Removed trailing space
                 product_card_image_img.alt = `${productFound.name}`;
-
                 product_card_image.appendChild(product_card_image_img);
 
-                product_content_header.innerHTML = `<h3>${productFound.name}-${productFound.size}</h3>
-                                                    <p>${productFound.description || 'No description'}</p>
-                                                    <p>size : ${modifiedSize.toLowerCase() || 'No size'}</p>
-                                                    `
-                    ;
+                // --- MODIFICATION STARTS HERE ---
+
+                // Create the h3 element for name and size
+                const h3Element = document.createElement('h3');
+                h3Element.textContent = `${productFound.name}-${productFound.size}`; // Use textContent for safety
+
+                // Create the paragraph for the description and add the class
+                const descriptionP = document.createElement('p');
+                descriptionP.classList.add('product-description-text'); // Add the new CSS class here
+                descriptionP.textContent = productFound.more_detail || 'No description'; // Use textContent to preserve \n
+
+                // Create the paragraph for the size
+                const sizeP = document.createElement('p');
+                sizeP.textContent = `size : ${modifiedSize.toLowerCase() || 'No size'}`; // Use textContent
+
+                // Append these new elements to the header
+                product_content_header.appendChild(h3Element);
+                product_content_header.appendChild(descriptionP);
+                product_content_header.appendChild(sizeP);
+
+                // --- MODIFICATION ENDS HERE ---
 
                 product_content_footer.innerHTML = `<a href="../html/category-content.html?category=${categoryName}">Previous Page</a>
                                                     <img src="/products-image/diagonal-arrow.png" alt="diagonal arrow">`;

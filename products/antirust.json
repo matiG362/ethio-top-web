@@ -1,0 +1,82 @@
+{
+    "ANTIRUST Gray": [
+        {
+            "id": 1,
+            "size": "1L",
+            "name": "ANTIRUST Gray",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Gray is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "4L",
+            "name": "ANTIRUST Gray",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Gray is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        },
+        {
+            "id": 3,
+            "size": "20L",
+            "name": "ANTIRUST Gray",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Gray is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        }
+    ],
+    "ANTIRUST Dark Gray": [
+        {
+            "id": 1,
+            "size": "1L",
+            "name": "ANTIRUST Dark Gray",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Dark Gray is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "4L",
+            "name": "ANTIRUST Dark Gray",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Zinc Phosphate Primer is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        }
+    ],
+    "ANTIRUST Red": [
+        {
+            "id": 1,
+            "size": "1L",
+            "name": "ANTIRUST Red",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Red is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "4L",
+            "name": "ANTIRUST Red",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Zinc Phosphate Primer is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        }
+    ],
+    "ANTIRUST Blue": [
+        {
+            "id": 1,
+            "size": "1L",
+            "name": "ANTIRUST Blue",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Blue is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "4L",
+            "name": "ANTIRUST Blue",
+            "description": "Oil-based primer for durability, smooth finish, and strong rust prevention.",
+            "more_detail": "ANTIRUST Zinc Phosphate Primer is an oil-based coating using natural or synthetic oils, known for its durability, smooth finish, and strong adhesion, specifically designed to prevent rust.\n\nCoverage: [12 to 14 square matter/1 lit]\nFinish: Semi-Gloss\nDrying Time: ≈ [3 to 4] hours.\nRecoat: ≈ [12] hours.\nApplication: Brush, Roller, Spray",
+            "image": null
+        }
+    ]
+}

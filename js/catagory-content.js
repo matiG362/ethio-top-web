@@ -1,64 +1,53 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const productListDiv = document.querySelector('.products-grid');
     const lineWithButtonDiv = document.querySelector('.line-with-button');
-    const seeMoreButton = document.querySelector('.see-more-button'); // Select the see-more button
-    const nextDiv = document.createElement('div')
-    nextDiv.classList.add('next');
-    const prevDiv = document.createElement('div')
-    prevDiv.classList.add('previous');
-    const nextButton = document.createElement('button');
-    nextButton.classList.add('next-button');
-    const prevButton = document.createElement('button');
-    prevButton.classList.add('prvious-button');
-    // Hide the "See More" button
+    const seeMoreButton = document.querySelector('.see-more-button'); // This button is hidden by design
+
+    // Hide the "See More" button if it exists
     if (seeMoreButton) {
         seeMoreButton.style.display = 'none';
     }
 
-    // Style for Previous button
-    const prevButtonStyle = `
-    display: block;
-    margin: 30px auto;
-    padding: 20px 25px;
-    background-color: rgba(15, 77, 156, 1);
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 30px;
-    text-align: center;
-    width: fit-content;
-    border: none;
-    margin: 0 10px;
-    z-index: 1;
-    font-size: 17px
+    // Create and style pagination buttons
+    const prevDiv = document.createElement('div');
+    prevDiv.classList.add('previous');
+    const nextDiv = document.createElement('div');
+    nextDiv.classList.add('next');
+
+    const prevButton = document.createElement('button');
+    prevButton.classList.add('previous-button'); // Corrected typo: 'prvious-button' to 'previous-button'
+    const nextButton = document.createElement('button');
+    nextButton.classList.add('next-button');
+
+    // Button shared styles (apply directly to the button elements)
+    const buttonSharedStyle = `
+        display: block;
+        padding: 20px 25px;
+        background-color: rgba(15, 77, 156, 1);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 30px;
+        text-align: center;
+        width: fit-content;
+        border: none;
+        margin: 0 10px; /* Space between buttons */
+        z-index: 1;
+        font-size: 17px;
+        cursor: pointer; /* Add cursor pointer for better UX */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
     `;
 
-    // Style for Next button
-    const nextButtonStyle = `
-       display: block;
-    margin: 30px auto;
-    padding: 20px 25px;
-    background-color: rgba(15, 77, 156, 1);
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 30px;
-    text-align: center;
-    width: fit-content;
-    border: none;
-    margin: 0 10px;
-    z-index: 1;
-    font-size: 17px
-    `;
-
+    prevButton.style.cssText = buttonSharedStyle;
+    nextButton.style.cssText = buttonSharedStyle;
 
     nextButton.textContent = 'Next';
     prevButton.textContent = 'Previous';
 
-    nextButton.style.cssText = prevButtonStyle;
-    prevButton.style.cssText = nextButtonStyle;
-
-    prevButton.style.display = 'none'; // Initially hide previous button
+    // Append buttons to their respective divs, then append to lineWithButtonDiv once
+    prevDiv.appendChild(prevButton);
+    nextDiv.appendChild(nextButton);
+    lineWithButtonDiv.appendChild(prevDiv);
+    lineWithButtonDiv.appendChild(nextDiv);
 
     // Get the category from the query parameter
     const urlParams = new URLSearchParams(window.location.search);
@@ -66,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!categoryName) {
         productListDiv.innerHTML = '<p>No category specified.</p>';
+        // Hide pagination buttons if no category
+        lineWithButtonDiv.style.display = 'none';
         return;
     }
 
@@ -84,11 +75,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 allProducts = allProducts.concat(products);
             });
 
-            let displayedCount = 0; // Track displayed product count
+            let currentPage = 1; // Start at the first page
             const productsPerPage = 6;
+            const totalPages = Math.ceil(allProducts.length / productsPerPage); // Calculate total number of pages
 
-            const displayProducts = (productsToDisplay) => {
+            const displayProducts = (pageNumber) => {
                 productListDiv.innerHTML = ''; // Clear previous products
+
+                const startIndex = (pageNumber - 1) * productsPerPage;
+                const endIndex = startIndex + productsPerPage;
+                const productsToDisplay = allProducts.slice(startIndex, endIndex);
+
+                if (productsToDisplay.length === 0 && allProducts.length > 0 && pageNumber > 1) {
+                    // This handles a case where the last page might have been clicked
+                    // and then items were removed, leading to an empty page.
+                    // Generally, currentPage check prevents this.
+                    currentPage--;
+                    displayProducts(currentPage);
+                    return;
+                }
+
+                if (productsToDisplay.length === 0 && allProducts.length === 0) {
+                    productListDiv.innerHTML = '<p>No products available in this category.</p>';
+                    return;
+                }
 
                 productsToDisplay.forEach(product => {
                     const productCard = document.createElement('div');
@@ -108,15 +118,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const product_card_image_img = document.createElement('img');
 
-                    product_card_image_img.src = `${product.image} `;
+                    product_card_image_img.src = `${product.image || '/products-image/paint-number1.png'} `; // Added fallback image
                     product_card_image_img.alt = `${product.name}`;
 
                     product_card_image.appendChild(product_card_image_img);
 
                     product_content_header.innerHTML = `<h3>${product.name}-${product.size}</h3>
-                                                <p>${product.description || 'No description'}</p>`;
+                                                    <p>${product.description || 'No description'}</p>`;
                     product_content_footer.innerHTML = `<a href="../html/products-detail.html?category=${categoryName}&productName=${encodeURIComponent(product.name)}&productSize=${encodeURIComponent(product.size)}">More detail</a>
-                                                <img src="/products-image/diagonal-arrow.png" alt="diagonal arrow">`;
+                                                    <img src="/products-image/diagonal-arrow.png" alt="diagonal arrow">`;
 
 
                     product_content.appendChild(product_content_header);
@@ -126,52 +136,56 @@ document.addEventListener('DOMContentLoaded', () => {
                     productCard.appendChild(product_content);
                     productListDiv.appendChild(productCard);
                 });
+
+                // After displaying products, update button visibility
+                updatePaginationButtons();
             };
 
-            // Initial display: first 6 products
-            displayProducts(allProducts.slice(0, productsPerPage));
-            displayedCount += productsPerPage;
-
-            // Add buttons to the line-with-button div
-            prevDiv.appendChild(prevButton);
-            nextDiv.appendChild(nextButton);
-            lineWithButtonDiv.appendChild(prevDiv);
-            lineWithButtonDiv.appendChild(nextDiv);
-
-            // Show "Next" if there are more products
-            if (allProducts.length > productsPerPage) {
-                prevDiv.appendChild(prevButton);
-                nextDiv.appendChild(nextButton);
-                document.querySelector('.line-with-button').appendChild(prevDiv);
-                document.querySelector('.line-with-button').appendChild(nextDiv);
-            }
-
-            // Next button event listener (REPLACE)
-            nextButton.addEventListener('click', () => {
-                displayedCount += productsPerPage;
-                displayProducts(allProducts.slice(displayedCount - productsPerPage, displayedCount));
-
-                prevButton.style.display = 'block';
-
-                if (displayedCount >= allProducts.length) {
+            const updatePaginationButtons = () => {
+                if (totalPages <= 1) {
+                    // If there's only one page or no products, hide both buttons
                     nextButton.style.display = 'none';
+                    prevButton.style.display = 'none';
+                } else {
+                    // Show/hide Next button
+                    if (currentPage >= totalPages) {
+                        nextButton.style.display = 'none';
+                    } else {
+                        nextButton.style.display = 'block';
+                    }
+
+                    // Show/hide Previous button
+                    if (currentPage <= 1) {
+                        prevButton.style.display = 'none';
+                    } else {
+                        prevButton.style.display = 'block';
+                    }
+                }
+            };
+
+            // Initial display: Load the first page of products
+            displayProducts(currentPage);
+
+            // Next button event listener
+            nextButton.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayProducts(currentPage);
                 }
             });
 
-            // Previous button event listener (RESTORE)
+            // Previous button event listener
             prevButton.addEventListener('click', () => {
-                displayedCount -= productsPerPage;
-                displayProducts(allProducts.slice(displayedCount - productsPerPage, displayedCount));
-
-                if (displayedCount === productsPerPage) {
-                    prevButton.style.display = 'none';
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayProducts(currentPage);
                 }
-
-                nextButton.style.display = 'block';
             });
         })
         .catch(error => {
             console.error(`Error fetching product data for category ${categoryName}:`, error);
             productListDiv.innerHTML = `<p>Could not load product data for category ${categoryName}.</p>`;
+            // Hide pagination buttons on error
+            lineWithButtonDiv.innerHTML = '';
         });
 });

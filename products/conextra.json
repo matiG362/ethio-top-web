@@ -1,0 +1,38 @@
+{
+    "CONEXTRA Bonding Agent": [
+        {
+            "id": 1,
+            "size": "1kg",
+            "name": "CONEXTRA Bonding Agent",
+            "description": "High-quality acrylic exterior coating with texture and strong environmental resistance.",
+            "more_detail": "CONEXTRA Bonding Agent is an acrylic-based high-quality exterior coating designed to provide durability and aesthetic appeal. It offers attractive textures and designs, and strong resistance to water, alkali, dust, mold, and UV light.\n\nCoverage: [20 to 25 square meter/25kg]\nFinish: Satin\nDrying Time: ≈ [5 to 7] hours.\nApplication: using Spray, plastic or steel trowel",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "5kg",
+            "name": "CONEXTRA Bonding Agent",
+            "description": "High-quality acrylic exterior coating with texture and strong environmental resistance.",
+            "more_detail": "CONEXTRA Bonding Agent is an acrylic-based high-quality exterior coating designed to provide durability and aesthetic appeal. It offers attractive textures and designs, and strong resistance to water, alkali, dust, mold, and UV light.\n\nCoverage: [20 to 25 square meter/25kg]\nFinish: Satin\nDrying Time: ≈ [5 to 7] hours.\nApplication: using Spray, plastic or steel trowel",
+            "image": null
+        }
+    ],
+    "CONEXTRA Curing Compound": [
+        {
+            "id": 1,
+            "size": "5L",
+            "name": "CONEXTRA Curing Compound",
+            "description": "High-quality acrylic exterior coating with texture and strong environmental resistance.",
+            "more_detail": "CONEXTRA Curing Compound is an acrylic-based high-quality exterior coating designed to provide durability and aesthetic appeal. It offers attractive textures and designs, and strong resistance to water, alkali, dust, mold, and UV light.\n\nCoverage: [20 to 25 square meter/25kg]\nFinish: Satin\nDrying Time: ≈ [5 to 7] hours.\nApplication: using Spray, plastic or steel trowel",
+            "image": null
+        },
+        {
+            "id": 2,
+            "size": "20L",
+            "name": "CONEXTRA Curing Compound",
+            "description": "High-quality acrylic exterior coating with texture and strong environmental resistance.",
+            "more_detail": "CONEXTRA Curing Compound is an acrylic-based high-quality exterior coating designed to provide durability and aesthetic appeal. It offers attractive textures and designs, and strong resistance to water, alkali, dust, mold, and UV light.\n\nCoverage: [20 to 25 square meter/25kg]\nFinish: Satin\nDrying Time: ≈ [5 to 7] hours.\nApplication: using Spray, plastic or steel trowel",
+            "image": null
+        }
+    ]
+}

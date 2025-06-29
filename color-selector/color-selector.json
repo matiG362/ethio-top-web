@@ -13,7 +13,7 @@
         "color4": "magenta",
         "color5": "pink"
     },
-    "ENAMEL": {
+    "ENAMIL": {
         "color1": "white",
         "color2": "ivory",
         "color3": "beige",
@@ -40,5 +40,61 @@
         "color3": "turquoise",
         "color4": "aquamarine",
         "color5": "azure"
+    },
+    "POWDER_QUARTZ": {
+        "color1": "violet",
+        "color2": "red",
+        "color3": "turquoise",
+        "color4": "ivory",
+        "color5": "azure"
+    },
+    "STONE_PAINTS": {
+        "color1": "teal",
+        "color2": "azure",
+        "color3": "turquoise",
+        "color4": "cyan",
+        "color5": "khaki"
+    },
+    "CONEXTRA": {
+        "color1": "magenta",
+        "color2": "yellow",
+        "color3": "turquoise",
+        "color4": "tan",
+        "color5": "teal"
+    },
+    "TEXTURE": {
+        "color1": "tan",
+        "color2": "blue",
+        "color3": "turquoise",
+        "color4": "khaki",
+        "color5": "azure"
+    },
+    "PRIMER": {
+        "color1": "teal",
+        "color2": "cyan",
+        "color3": "violet",
+        "color4": "aquamarine",
+        "color5": "yellow"
+    },
+    "VARNISH": {
+        "color1": "teal",
+        "color2": "turquoise",
+        "color3": "cyan",
+        "color4": "khaki",
+        "color5": "black"
+    },
+    "ANTIRUST": {
+        "color1": "magenta",
+        "color2": "azure",
+        "color3": "turquoise",
+        "color4": "teal",
+        "color5": "azure"
+    },
+    "PUTTY": {
+        "color1": "teal",
+        "color2": "violet",
+        "color3": "magenta",
+        "color4": "tan",
+        "color5": "ivory"
     }
 }
