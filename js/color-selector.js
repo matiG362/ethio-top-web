@@ -1,85 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     const listCategoryDiv = document.querySelector('.list-category');
-//     listCategoryDiv.innerHTML = '';
-//     const colorsDiv = document.querySelector('.colors');
-//     const style = document.createElement('style');
-//     document.head.appendChild(style);
-//     const productImageDiv = document.querySelector('.product-image');
-
-//     fetch('../color-selector/color-selector.json')
-//         .then(response => {
-//             if (!response.ok) {
-//                 throw new Error(`HTTP error! status: ${response.status}`);
-//             }
-//             return response.json();
-//         })
-//         .then(jsonData => {
-//             let firstGroupKey = Object.keys(jsonData)[0];
-//             displayColors(jsonData, firstGroupKey);
-
-//             for (const key in jsonData) {
-//                 if (jsonData.hasOwnProperty(key)) {
-//                     const div = document.createElement('div');
-//                     div.textContent = key;
-//                     div.addEventListener('click', () => {
-//                         displayColors(jsonData, key);
-//                     });
-//                     listCategoryDiv.appendChild(div);
-//                 }
-//             }
-
-//             function displayColors(jsonData, groupKey) {
-//                 colorsDiv.innerHTML = '';
-//                 style.innerHTML = '';
-//                 const colorData = jsonData[groupKey];
-//                 console.log(`Displaying colors for group: ${groupKey}`);
-//                 for (const colorName in colorData) {
-//                     if (colorData.hasOwnProperty(colorName)) {
-//                         const colorValue = colorData[colorName];
-//                         const colorBox = document.createElement('div');
-//                         const uniqueClassName = `color-box-${groupKey}-${colorName.replace(/\s+/g, '-')}`;
-//                         colorBox.className = `color-box ${uniqueClassName}`;
-//                         // colorBox.textContent = colorName;
-//                         colorBox.addEventListener('click', () => {
-//                             try {
-//                                 productImageDiv.style.backgroundColor = colorValue;
-//                             } catch (error) {
-//                                 console.error('Error setting background color:', error, { colorValue });
-//                             }
-//                         });
-
-//                         colorsDiv.appendChild(colorBox);
-
-//                         console.log(`  Color: ${colorName}, Value: ${colorValue}, Class: ${uniqueClassName}`); // Add this line
-
-
-
-//                         let cssRules = `.color-box.${uniqueClassName} { background-color: ${colorValue}; `;
-//                         if (colorName === 'color2') {
-//                             cssRules += "box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); margin-bottom: 20px; }";
-//                         } else {
-//                             cssRules += " }";
-//                         }
-
-//                         try {
-//                             style.sheet.insertRule(
-//                                 cssRules,
-//                                 style.sheet.cssRules.length
-//                             );
-//                         } catch (error) {
-//                             console.error("Error inserting CSS rule:", error, cssRules);
-//                         }
-//                     }
-//                 }
-//             }
-//         })
-//         .catch(error => {
-//             console.error('Error fetching or parsing JSON:', error);
-//             listCategoryDiv.innerHTML = '<p class="text-red-500">Failed to load data.</p>';
-//         });
-// });
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const listCategoryDiv = document.querySelector('.list-category');
     const colorsDiv = document.querySelector('.colors');
@@ -94,21 +12,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.createElement('button');
     prevButton.innerHTML = '&larr; Previous'; // Left arrow HTML entity
     prevButton.className = 'pagination-button prev-button'; // Styles defined in color-selector.css
+    // Set initial display for the button itself
+    prevButton.style.display = 'none';
 
     const nextButton = document.createElement('button');
     nextButton.innerHTML = 'Next &rarr;'; // Right arrow HTML entity
     nextButton.className = 'pagination-button next-button'; // Styles defined in color-selector.css
+    // Set initial display for the button itself
+    nextButton.style.display = 'none';
+
+    // Create the two wrapper divs
+    const prevButtonDiv = document.createElement('div');
+    prevButtonDiv.className = 'pagination-button-wrapper';
+
+    const nextButtonDiv = document.createElement('div');
+    nextButtonDiv.className = 'pagination-button-wrapper';
+
 
     // Append pagination controls to the parent of listCategoryDiv
-    // This inserts them right after the listCategoryDiv, still within its parent (e.g., .category-widget)
     if (listCategoryDiv && listCategoryDiv.parentNode) {
         listCategoryDiv.parentNode.insertBefore(paginationContainer, listCategoryDiv.nextSibling);
     } else {
-        // Fallback if listCategoryDiv has no parent (unlikely in your HTML)
         document.body.appendChild(paginationContainer);
     }
-    paginationContainer.appendChild(prevButton);
-    paginationContainer.appendChild(nextButton);
+
+    // Append buttons to their new wrapper divs
+    prevButtonDiv.appendChild(prevButton);
+    nextButtonDiv.appendChild(nextButton);
+
+    // Append the wrapper divs to the pagination container
+    paginationContainer.appendChild(prevButtonDiv);
+    paginationContainer.appendChild(nextButtonDiv);
     // --- End Pagination Elements ---
 
     let allCategoryKeys = []; // To store all keys for pagination
@@ -204,16 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
              * Updates the visibility of the previous and next pagination buttons.
              */
             function updatePaginationButtons() {
-                // Show/hide Previous button
+                // Show/hide Previous button (directly on the button)
                 if (currentIndex > 0) {
-                    prevButton.style.display = 'inline-block'; // Use inline-block for buttons
+                    prevButton.style.display = 'inline-block';
                 } else {
                     prevButton.style.display = 'none';
                 }
 
-                // Show/hide Next button
+                // Show/hide Next button (directly on the button)
                 if (currentIndex + itemsPerPage < allCategoryKeys.length) {
-                    nextButton.style.display = 'inline-block'; // Use inline-block for buttons
+                    nextButton.style.display = 'inline-block';
                 } else {
                     nextButton.style.display = 'none';
                 }

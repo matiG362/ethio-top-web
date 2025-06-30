@@ -27,70 +27,71 @@
             </div>
             <img src="/images/about-us1.png" alt="image">
         </section>
-
-        <section class="about-us-container">
-            <section class="about-section">
-                <div class="about-image-left">
-                    <img src="/images/about-us3.png" alt="Paint Bucket"> <!-- Replace with your image -->
-                    <img src="/images/Group 1000007977.png" alt="Paint Bucket"> <!-- Replace with your image -->
+        <!-- NEW & IMPROVED STRUCTURE -->
+        <section class="about-section">
+            <div class="about-gallery">
+                <!-- Column 1 (Left) -->
+                <div class="gallery-col">
+                    <img src="/images/about-us3.png" alt="Paint Bucket" class="gallery-img-1">
+                    <img src="/images/Group 1000007977.png" alt="Paint Brush Icon" class="gallery-icon">
                 </div>
-                <div class="about-images">
+
+                <!-- Column 2 (Right) -->
+                <div class="gallery-col">
                     <div class="experience-badge">
                         <span class="experience-years">5+</span>
-                        <span class="experience-text">
-                            Years Of
-                            <br>
-                            <span class="experience-text-bottom">Experience</span>
-                        </span>
+                        <span class="experience-text">Years Of<br><span
+                                class="experience-text-bottom">Experience</span></span>
                     </div>
-                    <img src="/images/image(2).png" alt="Paint Brush">
+                    <img src="/images/image(2).png" alt="Paint Brush" class="gallery-img-2">
                 </div>
-                <div class="about-info">
-                    <span class="about-info-text">
-                        <img src="/images/layer.png" alt="layer image">
-                        About us
-                    </span>
-                    <h1>Ethio Top Paints</h1>
-                    <p>Ethio Top Manufacturing PLC is a leading Ethiopian manufacturer of high-quality paint products
-                        established in Addis Ababa, in 2013 Ethiopian calendar with brand name Ethio top paints,
-                        specializing in both interior and exterior wall paints. We are driven by a mission to provide
-                        durable, Eco-friendly, and aesthetically pleasing paint solutions to homes, businesses, and
-                        industrial projects throughout Ethiopia and beyond.</p>
+            </div>
+            <!-- 2. The info container remains the same -->
+            <div class="about-info">
+                <span class="about-info-text">
+                    <img src="/images/layer.png" alt="layer image">
+                    About us
+                </span>
+                <h1>Ethio Top Paints</h1>
+                <p>Ethio Top Manufacturing PLC is a leading Ethiopian manufacturer of high-quality paint products
+                    established in Addis Ababa, in 2013 Ethiopian calendar with brand name Ethio top paints,
+                    specializing in both interior and exterior wall paints. We are driven by a mission to provide
+                    durable, Eco-friendly, and aesthetically pleasing paint solutions to homes, businesses, and
+                    industrial projects throughout Ethiopia and beyond.</p>
 
-                    <div class="mission-vision">
-                        <div class="card">
-                            <div class="card-header">
-                                <img src="/images/Group 1000009654(1).png" alt="Our Mission image">
-                                <h3>Our Mission</h3>
-                            </div>
-                            <p>To produce top-quality, affordable, and sustainable paint solutions that enhance the
-                                beauty and longevity of buildings while exceeding customer expectations by leveraging
-                                technology, skilled and disciplined personnel .</p>
+                <div class="mission-vision">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/images/Group 1000009654(1).png" alt="Our Mission image">
+                            <h3>Our Mission</h3>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <img src="/images/Group 1000009654.png" alt="our Vision image">
-                                <h3>Our Vision</h3>
-                            </div>
-                            <p>To be one of the top three Ethiopia’s most trusted and innovative paint brand quality
-                                manufacturing companies in the country in the next five years.</p>
-                        </div>
+                        <p>To produce top-quality, affordable, and sustainable paint solutions that enhance the
+                            beauty and longevity of buildings while exceeding customer expectations by leveraging
+                            technology, skilled and disciplined personnel .</p>
                     </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/images/Group 1000009654.png" alt="our Vision image">
+                            <h3>Our Vision</h3>
+                        </div>
+                        <p>To be one of the top three Ethiopia’s most trusted and innovative paint brand quality
+                            manufacturing companies in the country in the next five years.</p>
+                    </div>
+                </div>
 
-                    <div class="read-more-contact">
-                        <!-- <a href="#" class="read-more">Read More <span class="read-more-arrow">&rarr;</span></a> -->
-                        <div class="contact-info">
-                            <div class="phone-icon">
-                                <img src="/images/phone.png" alt="Phone Icon">
-                            </div>
-                            <div class="contact-text">
-                                <span>Need help?</span>
-                                <span>(+251) 911 223 344</span>
-                            </div>
+                <div class="read-more-contact">
+                    <!-- <a href="#" class="read-more">Read More <span class="read-more-arrow">&rarr;</span></a> -->
+                    <div class="contact-info">
+                        <div class="phone-icon">
+                            <img src="/images/phone.png" alt="Phone Icon">
+                        </div>
+                        <div class="contact-text">
+                            <span>Need help?</span>
+                            <span>(+251) 911 223 344</span>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
 
         <section class="ordering-process">
@@ -132,40 +133,40 @@
                 <h2>Let's Connect!</h2>
                 <form action="https://formsubmit.co/gebremedhinmatyas@gmail.com" method="POST">
                     <div class="contact-form">
-                        <div class="contact-email">
+                        <!-- This row contains the side-by-side fields -->
+                        <div class="form-row">
                             <div class="form-group">
                                 <label for="email">Your Email</label>
-                                <div class="inside">
-                                    <input type="email" name="email" required id="email" placeholder="Your Email">
-                                    <img src="/images/telegram.png" alt="">
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" placeholder="Your Email" ...>
+                                    <img src="/images/telegram.png" ...>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Your Phone</label>
-                                <div class="inside">
-                                    <input type="text" name="subject" required placeholder="Your Phone">
-                                    <img src="/images/phone2.png" alt="">
+                                <div class="input-wrapper">
+                                    <input type="text" id="phone" placeholder="Your Phone" ...>
+                                    <img src="/images/phone2.png" ...>
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-address">
-                            <div class="form-group">
-                                <label for="address">Your Address</label>
-                                <div class="inside">
-                                    <input type="text" id="address" placeholder="Your Address">
-                                    <img src="/images/location.png" alt="">
-                                </div>
+
+                        <!-- These are the full-width fields -->
+                        <div class="form-group">
+                            <label for="address">Your Address</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="address" placeholder="Your Address" ...>
+                                <img src="/images/location.png" ...>
                             </div>
                         </div>
-                        <div class="contact-message">
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <div class="inside-message">
-                                    <textarea id="message" placeholder="Write Message..."></textarea>
-                                    <img src="/images/message.png" alt="message image" class="message-icon">
-                                </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-wrapper">
+                                <textarea id="message" placeholder="Write Message..."></textarea>
+                                <img src="/images/message.png" ...>
                             </div>
                         </div>
+
                         <button type="submit">Send Message</button>
                     </div>
                 </form>

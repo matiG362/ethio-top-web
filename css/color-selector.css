@@ -1,19 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F5EC;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* --- Find this rule or add it at the top of about.css --- */
+.hero-section {
+    position: relative;
+    /* THIS IS THE CRITICAL FIX */
+    display: inline-block;
+    /* Helps contain the image correctly */
+}
+
+/* Ensure your image takes up the full container width */
+.hero-section img {
+    display: block;
+    width: 98%;
+    height: auto;
+    border-radius: 25px;
+    margin: auto;
+}
+
 .hero-section h1 {
-    color: rgba(15, 77, 156, 1);
+    position: absolute;
+    /* Position this relative to the hero-section */
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* A small correction for better centering */
+    color: #0F4D9C;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+    /* Ensure text is above the image */
 }
 
 .breadcrumbs {
-    left: 9.5%;
-    color: rgba(15, 77, 156, 1);
+    position: absolute;
+    /* Position this relative to the hero-section */
+    top: 55%;
+    left: 8%;
+    transform: translateY(1em);
+    /* Another small correction */
+    color: #0F4D9C;
+    font-size: 1.2em;
+    z-index: 1;
+    /* Ensure text is above the image */
 }
 
 .breadcrumbs a {
-    color: rgba(15, 77, 156, 1);
+    color: #fff;
+    text-decoration: none;
 }
 
+.breadcrumbs a :hover {
+    text-decoration: line-through;
+}
 
-
-
+.breadcrumbs span {
+    color: #0F4D9C;
+}
 
 
 /*main content*/
@@ -137,15 +187,20 @@
 }
 
 .pagination-button {
-    padding: 8px 15px;
-    margin-left: 15px;
+    display: block;
+    padding: 20px 25px;
+    background-color: rgb(15, 77, 156);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    width: fit-content;
+    border: medium;
+    margin: 0px 10px;
+    z-index: 1;
+    font-size: 17px;
     cursor: pointer;
-    background-color: #e2e8f0;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    font-size: 1em;
-    color: #333;
-    transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    transition: background-color 0.3s;
 }
 
 .pagination-button:hover {
@@ -163,46 +218,6 @@
     width: 100%;
     padding: 20px 0;
 }
-
-/* .color-box.red {
-    background-color: rgba(255, 22, 22, 1);
-}
-
-.color-box.gray {
-    background-color: rgba(100, 132, 143, 1);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-bottom: 20px;
-
-}
-
-.color-box.yellow {
-    background-color: rgba(217, 255, 0, 1);
-}
-
-.color-box.pink {
-    background-color: rgba(255, 0, 178, 1);
-}
-
-.color-box.dark-blue {
-    background-color: rgba(17, 0, 254, 1);
-} */
-
-/* Responsive adjustment (optional) */
-@media (max-width: 480px) {
-    .colors {
-        flex-direction: column;
-        /* Stack colors vertically on smaller screens */
-        align-items: stretch;
-        /* Stretch to fill width */
-    }
-
-    .color-box {
-        margin: 5px 0;
-        /* Adjust margins for vertical stacking */
-    }
-}
-
-
 
 .search-widget {
     background-color: white;
@@ -351,4 +366,135 @@
 .tag a {
     text-decoration: none;
     color: rgba(114, 114, 114, 1);
+}
+
+/* ==========================================================================
+   TABLET & MOBILE STYLES -- Color Selector Page
+   ========================================================================== */
+
+/* --- Breakpoint for Tablets & Down (e.g., 992px) --- */
+@media (max-width: 992px) {
+
+    /* --- Hero Section: Center the text --- */
+    .hero-section h1 {
+        font-size: 2.8rem;
+        width: 90%;
+        text-align: center;
+        left: 30%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .breadcrumbs {
+        top: 65%;
+        left: 25%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* --- Main Layout: Stack the columns --- */
+    .main-content {
+        flex-direction: column;
+        width: 95%;
+        /* Use more of the screen width */
+    }
+
+    /* Reset the flex properties and set width to 100% */
+    .left-section,
+    .right-section {
+        flex: none;
+        width: 94%;
+        margin: auto;
+
+    }
+
+    .right-section {
+        margin-top: 50px;
+        /* Add space between the stacked sections */
+    }
+}
+
+
+/* --- Breakpoint for Phones (e.g., 768px) --- */
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 2em;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        /* The standard centering trick */
+        width: 90%;
+        /* Prevent it from overflowing */
+        text-align: center;
+    }
+
+    .breadcrumbs {
+        top: 60%;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+
+    .color-details {
+        width: 100%;
+        /* Allow color details to use full width */
+    }
+
+    .color-name {
+        font-size: 2.2em;
+        /* Reduce font size for mobile */
+    }
+
+    /* Stack the action buttons */
+    .color-buttons {
+        flex-direction: column;
+        align-items: center;
+        /* Center the stacked buttons */
+        gap: 15px;
+    }
+
+    /* Make buttons full width for easy tapping */
+    .color-buttons .color-buttons-one,
+    .color-buttons .color-buttons-two {
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+        /* Center text inside buttons */
+        box-sizing: border-box;
+    }
+
+    .list-category {
+        justify-content: flex-start;
+        /* Align category tags to the left */
+    }
+}
+
+@media(max-width:480px) {
+    .hero-section h1 {
+        font-size: 1.6em;
+        left: 24%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    .breadcrumbs {
+        top: 60%;
+        left: 25%;
+        transform: translateX(-50%);
+        font-size: 1em;
+    }
+
+    .main-content {
+        padding: 0px;
+    }
+
+    .category-widget {
+        margin: 0px;
+    }
+
+    .list-category {
+        justify-content: center;
+    }
 }

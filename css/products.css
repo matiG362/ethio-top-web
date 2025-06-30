@@ -1,3 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F5EC;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    /* THIS IS THE CRITICAL FIX */
+    display: inline-block;
+    /* Helps contain the image correctly */
+}
+
+/* Ensure your image takes up the full container width */
+.hero-section img {
+    display: block;
+    width: 98%;
+    height: auto;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.hero-section h1 {
+    position: absolute;
+    /* Position this relative to the hero-section */
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* A small correction for better centering */
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+    /* Ensure text is above the image */
+}
+
+.breadcrumbs {
+    position: absolute;
+    /* Position this relative to the hero-section */
+    top: 55%;
+    left: 14%;
+    transform: translateY(1em);
+    /* Another small correction */
+    color: white;
+    font-size: 1.2em;
+    z-index: 1;
+    /* Ensure text is above the image */
+}
+
+.breadcrumbs a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
 /* Products Section Styles */
 .products-section {
     padding: 50px 0;
@@ -8,12 +67,12 @@
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
 }
 
 .product-card {
-    height: 250px;
+    /* height: 250px; */
     display: flex;
     align-items: flex-start;
     border: 1px solid #ddd;
@@ -95,24 +154,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* See More Button Styles */
 .line-with-button {
     display: flex;
@@ -163,4 +204,119 @@
     margin: 0 auto;
     /* Center the image horizontally */
     margin-bottom: 0px;
+}
+
+
+/* ==========================================================================
+   TABLET & MOBILE STYLES -- Products Page
+   ========================================================================== */
+@media(max-width:992px) {
+    .breadcrumbs {
+        top: 60%;
+        left: 18%;
+        transform: translateX(-50%);
+    }
+}
+
+/* --- Breakpoint for Phones (e.g., 768px) --- */
+@media (max-width: 768px) {
+
+    /* --- Hero Section: Center the text on tablets and mobile --- */
+    .hero-section h1 {
+        font-size: 2em;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        /* The standard centering trick */
+        width: 90%;
+        /* Prevent it from overflowing */
+        text-align: center;
+    }
+
+    .breadcrumbs {
+        top: 60%;
+        left: 22%;
+        transform: translateX(-50%);
+    }
+
+
+    /* --- Products Section --- */
+    .products-section {
+        width: 95%;
+        /* Use a little more screen width */
+        padding: 25px 0;
+    }
+
+    .products-grid {
+        /* The grid will automatically adjust to 1 or 2 columns here.
+           We'll target the cards inside it. */
+        gap: 20px;
+    }
+
+    /* --- THIS IS THE KEY CHANGE FOR THE CARDS --- */
+    .product-card {
+        flex-direction: column;
+        /* Stack image and content vertically */
+        height: auto;
+        /* Let the height be determined by content */
+        align-items: stretch;
+        /* Make children stretch to full width */
+        gap: 0;
+    }
+
+    .product-card-image {
+        width: 100%;
+        /* Image container takes full width */
+        height: 200px;
+        /* Give it a fixed height */
+        border-radius: 20px 20px 0 0;
+        /* Round top corners only */
+        align-items: center;
+        /* Center the paint can vertically */
+    }
+
+    .product-card-image img {
+        /* max-width: 150px; */
+        /* Control size of the paint can image */
+        height: auto;
+    }
+
+    .product-content {
+        padding: 20px;
+        /* Add padding that was previously on the card */
+        gap: 15px;
+    }
+}
+
+
+/* --- Breakpoint for Small Phones (e.g., 480px) --- */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.4em;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        /* The standard centering trick */
+        width: 90%;
+        /* Prevent it from overflowing */
+        text-align: center;
+    }
+
+    .breadcrumbs {
+        top: 60%;
+        left: 24%;
+        transform: translateX(-50%);
+        font-size: 1em;
+    }
+
+    .product-content h3 {
+        font-size: 1.2rem;
+        /* Make font smaller */
+    }
+
+    .product-content p {
+        font-size: 0.9rem;
+    }
+
+    .line-with-button {
+        margin: 40px auto;
+    }
 }

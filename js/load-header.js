@@ -1,29 +1,44 @@
-// /js/load-header.js
+// js/load-header.js
+
+// This function contains the logic to make the header interactive.
+// It will only be called AFTER the header HTML is on the page.
+function initializeHeaderScripts() {
+    const menuButton = document.querySelector('.menu-button');
+    const navigation = document.querySelector('.header-links');
+
+    if (menuButton && navigation) {
+        menuButton.addEventListener('click', () => {
+            navigation.classList.toggle('nav-open');
+        });
+    }
+}
+
+
+// This part of the code runs first when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    // Specify the path to your header.html file.
-    // Ensure this path is correct relative to where your HTML pages are served.
     fetch('/html/header.html')
         .then(response => {
-            // Check if the request was successful
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            return response.text(); // Get the HTML content as text
+            return response.text();
         })
         .then(html => {
-            // Find the placeholder element in your main HTML
             const headerPlaceholder = document.getElementById('header-placeholder');
             if (headerPlaceholder) {
-                // Insert the fetched HTML content into the placeholder
                 headerPlaceholder.innerHTML = html;
+
+                // *** THIS IS THE MAGIC STEP ***
+                // Now that the header HTML is on the page, we can run the
+                // script that makes it interactive.
+                initializeHeaderScripts();
             }
         })
         .catch(error => {
             console.error('Error loading header:', error);
-            // Optionally, display a user-friendly error message on the page
             const headerPlaceholder = document.getElementById('header-placeholder');
             if (headerPlaceholder) {
-                headerPlaceholder.innerHTML = '<p style="color: red; text-align: center; padding: 10px;">Failed to load header. Please check the file path and server.</p>';
+                headerPlaceholder.innerHTML = '<p style="color: red;">Failed to load header.</p>';
             }
         });
 });

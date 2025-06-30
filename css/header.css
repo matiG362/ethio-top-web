@@ -1,528 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/* ==========================================================================
+   HEADER STYLES - FINAL VERSION
+   ========================================================================== */
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #F2F5EC;
-    /* Background color */
-    font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-/* Header Styles */
-/* Header Styles - Original */
+/* === HEADER CONTAINER === */
 header {
-    background-color: #F2F5EC;
-    color: #184a98;
-    padding: 15px 20px;
+    background-color: transparent;
+    padding: 15px 30px;
     display: flex;
-    /* justify-content: space-between; */
-    gap: 20%;
+    justify-content: space-between;
+    /* This now works for 3 items! */
     align-items: center;
-    flex-wrap: wrap;
-    /* Added for wrapping on smaller screens */
 }
 
-.menu-toggle {
-    display: none;
+/* === LOGO === */
+.logo {
+    /* flex-grow: 1 would also work if nav isn't centered enough */
 }
 
-nav {
+/* === DESKTOP NAVIGATION === */
+nav.header-links {
     display: flex;
+    justify-content: center;
+    /* Center the nav links */
+    align-items: center;
 }
 
 nav .nav-item {
     position: relative;
+    font-size: 1.2em;
 }
 
-nav a {
+nav .nav-item a {
     text-decoration: none;
     padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    color: #104D9D;
-    margin-right: 15px;
+    display: block;
+    /* Simpler than flex for basic links */
+    color: rgba(15, 77, 156, 1);
     white-space: nowrap;
-    /* Prevent wrapping */
 }
 
-.logo .logo-img {
-    margin-left: 29px;
-    background-color: #F2F5EC;
-}
-
-.dropdown-arrow {
-    font-size: 0.8em;
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #F2F5EC;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* 
-.dropdown-content a {
-    padding: 12px 16px;
+/* === DESKTOP "ORDER" BUTTON === */
+a.order-button {
     text-decoration: none;
-    display: block;
-    color: #333;
-}
-
-.dropdown-content a:hover {
-    background-color: #F2F5EC;
-}
-
-.nav-item:hover .dropdown-content,
-.nav-item.active .dropdown-content {
-    display: block;
-}
-
-.nav-item:hover .dropdown-arrow,
-.nav-item.active .dropdown-arrow {
-    transform: rotate(90deg);
-} */
-
-.order-button {
-    margin-right: 28px;
     background-color: rgba(15, 77, 156, 1);
     color: #fff;
-    border: none;
-    padding: 8px 15px;
     border-radius: 35px;
-    cursor: pointer;
+    padding: 12px 15px;
     display: inline-flex;
     align-items: center;
+    gap: 8px;
     white-space: nowrap;
-    gap: 5px;
-    /* Prevent wrapping */
+    margin-bottom: 5px;
 }
 
-.order-button .order-button-arrow {
-    font-size: 25px;
-    margin: auto;
-    /* margin-bottom: 7px; */
+a.order-button:hover {
+    background-color: #104D9D;
+    /* Added a nice hover effect */
 }
 
-
-/* 
-@media (max-width: 480px) {
-    .logo .logo-img {
-        max-width: 30px !important;
-        height: auto !important;
-        margin-left: 10px !important;
-    }
-
-    .logo img {
-        max-width: 75px !important;
-        height: auto !important;
-        margin-left: 10px !important;
-    }
-} */
-
-.logo .logo-img {
-    margin-left: 29px;
-    background-color: #F2F5EC;
+.order-button-arrow {
+    margin-bottom: 5px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img:last-child {
-    /* Styling for the last image on larger screens if needed */
+/* === MOBILE-ONLY BUTTON (Hidden on Desktop) === */
+.order-button-mobile {
+    display: none;
+    /* Hide this by default */
 }
 
 
-
-
-
-
-
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Main Content on the header Styles */
-main {
-    padding: 20px;
+/* === MOBILE MENU TOGGLE (Hidden on Desktop) === */
+.menu-toggle {
+    display: none;
 }
 
-.hero-section {
-    position: relative;
-    display: inline-block;
+.menu-button {
+    background: transparent;
+    border: 2px solid #104D9D;
+    color: #104D9D;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.hero-section img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 25px;
-}
+/* ==========================================================================
+   TABLET & MOBILE STYLES (1024px and down)
+   ========================================================================== */
+@media (max-width: 1024px) {
 
-.hero-section h1 {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    margin: 0 0 30px 0;
-    /* Add margin to the bottom of h1 */
-    z-index: 1;
-}
-
-.breadcrumbs {
-    position: absolute;
-    bottom: auto;
-    /* Remove the bottom property */
-    top: 55%;
-    /* Position relative to the top of the hero-section */
-    left: 13.5%;
-    transform: translateY(1.5em);
-    /* Adjust the position relative to the h1 */
-    color: white;
-    font-size: 1em;
-    z-index: 1;
-}
-
-.breadcrumbs a {
-    color: white;
-    text-decoration: none;
-}
-
-.breadcrumbs a:hover {
-    text-decoration: underline;
-}
-
-
-
-/* resposive code added here */
-
-
-
-
-
-
-/* header css */
-/* @media (max-width: 480px) {
-    .menu-toggle {
-        display: block;
-        left: 30px;
-        
-
-    }
-
-    nav.header-links {
-        display: none;
-        align-items: end;
-
-    }
-
-    nav.header-links.active {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: #F2F5EC;
-        z-index: 999;
-
-    }
-
-    nav a {
-        margin: 5px 0;
-        margin-right: 0;
-        padding: 10px;
-        font-size: 0.9em;
-        width: 100%;
-    }
-
-    .order-button {
-        display: none;
-    }
-
-    main {
-        padding-top: 0px;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Media Queries for Mobile Responsiveness --- */
-
-/* Extra Small Mobile Devices (up to 320px width) */
-@media screen and (max-width: 320px) {
+    /* --- Header Layout on Mobile --- */
     header {
-        flex-direction: column;
-        align-items: center;
-        padding: 8px;
+        padding: 15px 20px;
     }
 
-    .logo {
-        margin-bottom: 8px;
-        margin-left: 0;
+    /* --- Hide Desktop Elements --- */
+    nav.header-links,
+    a.order-button {
+        display: none;
     }
 
-    .logo img {
-        max-width: 80%;
-        /* Ensure logo doesn't overflow */
-        height: auto;
-    }
-
+    /* --- Show Mobile Elements --- */
     .menu-toggle {
         display: block;
-        margin-right: 0;
-        align-self: center;
     }
 
-    .menu-toggle button {
-        padding: 5px 10px;
-        font-size: 0.8em;
+    /* --- Mobile Navigation Popup Styling --- */
+    header {
+        position: relative;
+        /* Context for the absolute positioned menu */
     }
 
+    /* The popup menu container */
     nav.header-links {
-        display: none;
-        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
-        margin-top: 8px;
-        background-color: #F2F5EC;
-        border-top: 1px solid #ccc;
+        background-color: #FBFDEA;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
     }
 
-    nav.header-links.open {
+    /* The class that JS toggles */
+    nav.header-links.nav-open {
         display: flex;
+        /* This makes the menu appear */
     }
 
+    /* Links inside the mobile menu */
     nav.header-links .nav-item {
-        margin: 0;
-        border-bottom: 1px solid #ddd;
+        width: 100%;
     }
 
     nav.header-links .nav-item a {
-        padding: 10px 15px;
-        justify-content: space-between;
-        font-size: 0.9em;
-    }
-
-    nav.header-links .dropdown-arrow {
-        font-size: 0.7em;
-    }
-
-    nav.header-links .dropdown-content {
-        position: relative;
-        box-shadow: none;
-        border: none;
         width: 100%;
-        padding-left: 10px;
+        padding: 15px 20px;
+        border-bottom: 1px solid #e8e8e8;
+        box-sizing: border-box;
     }
 
-    nav.header-links .dropdown-content li a {
-        padding: 8px 15px;
-        font-size: 0.85em;
-    }
-
-    .order-button {
-        display: none;
-    }
-}
-
-/* Small Mobile Devices (321px to 480px width) */
-@media screen and (min-width: 321px) and (max-width: 480px) {
-    header {
-        /* flex-direction: column;
-        align-items: center; */
-        padding: 10px;
-    }
-
-    .logo {
-        /* margin-bottom: 10px; */
-        margin-left: 0;
-    }
-
-    .menu-toggle {
+    /* SHOW the mobile button and style it */
+    .order-button-mobile {
         display: block;
-        margin-right: 0;
-        align-self: center;
+        background-color: #184a98;
+        color: white;
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 35px;
+        width: calc(100% - 30px);
+        /* Full width with margin */
     }
 
-    .menu-toggle button {
-        padding: 6px 12px;
-        font-size: 0.9em;
-        margin-right: 20px;
-    }
-
-    nav.header-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        background-color: #F2F5EC;
-        border-top: 1px solid #ccc;
-    }
-
-    nav.header-links.open {
-        display: flex;
-    }
-
-    nav.header-links .nav-item {
-        margin: 0;
-        border-bottom: 1px solid #ddd;
-    }
-
-    nav.header-links .nav-item a {
-        padding: 12px 15px;
-        justify-content: space-between;
-        font-size: 0.95em;
-    }
-
-    nav.header-links .dropdown-arrow {
-        font-size: 0.7em;
-    }
-
-    nav.header-links .dropdown-content {
-        position: relative;
-        box-shadow: none;
-        border: none;
-        width: 100%;
-        padding-left: 15px;
-    }
-
-    nav.header-links .dropdown-content li a {
-        padding: 10px 15px;
-        font-size: 0.9em;
-    }
-
-    .order-button {
-        display: none;
+    .order-button-mobile .order-button-arrow {
+        margin-left: 8px;
     }
 }
-
-/* Medium Mobile Devices (481px to 768px width) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    header {
-        padding: 12px 18px;
-        flex-direction: row;
-        /* Switch back to row for larger phones */
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .menu-toggle button {
-        padding: 6px 12px;
-        font-size: 0.9em;
-        margin-right: 20px;
-    }
-
-    .logo {
-        margin-bottom: 0;
-        margin-left: 18px;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-right: 18px;
-    }
-
-    nav.header-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        background-color: #F2F5EC;
-        border-top: 1px solid #ccc;
-    }
-
-    nav.header-links.open {
-        display: flex;
-    }
-
-    nav.header-links .nav-item {
-        margin-left: 0;
-        border-bottom: 1px solid #ddd;
-    }
-
-    nav.header-links .nav-item a {
-        padding: 12px 15px;
-        justify-content: space-between;
-    }
-
-    nav.header-links .dropdown-content {
-        position: relative;
-        box-shadow: none;
-        border: none;
-        width: 100%;
-        padding-left: 20px;
-    }
-
-    .order-button {
-        display: none;
-        /* Or you could show it on larger phones */
-    }
-}
-
-/* Larger Tablets and Small Desktops (1025px to 1200px width) - Optional */
-@media screen and (min-width: 780px) and (max-width: 1200px) {
-    header {
-        padding: 15px 30px;
-    }
-
-    .logo {
-        margin-left: 30px;
-    }
-
-    .menu-toggle {
-        display: none;
-        /* Hide menu toggle on larger screens */
-    }
-
-    nav.header-links {
-        display: flex;
-        /* Show full navigation */
-    }
-
-    nav.header-links .nav-item {
-        margin-left: 20px;
-    }
-
-    .order-button {
-        display: none;
-        margin-right: 30px;
-    }
-}
-
-/* Default styles for larger desktops (above 1200px) remain as your original styles */

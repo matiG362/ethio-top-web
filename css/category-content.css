@@ -13,5 +13,27 @@
 }
 
 .hero-section h1 {
-    left: 27%;
+    left: 24%;
+}
+
+@media(max-width:1024px) {
+    .breadcrumbs {
+        left: 8%;
+    }
+}
+
+@media(max-width:992px) {
+    .hero-section h1 {
+        left: 30%;
+    }
+
+    .breadcrumbs {
+        left: 21%;
+    }
+}
+
+@media(max-width:768px) {
+    .breadcrumbs {
+        left: 24%;
+    }
 }

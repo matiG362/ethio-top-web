@@ -37,3 +37,10 @@
     word-wrap: break-word;
     /* Good practice for long words breaking outside container */
 }
+
+
+@media(max-width:768px) {
+    .hero-section h1 {
+        left: 22%;
+    }
+}
