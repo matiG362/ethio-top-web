@@ -500,6 +500,7 @@ textarea:focus {
         top: 60%;
         left: 26%;
         transform: translateX(-50%);
+        font-size: 1em;
     }
 
 
