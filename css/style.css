@@ -1943,6 +1943,16 @@ textarea:focus {
         top: 20%;
     }
 
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        height: 20vh;
+        object-fit: cover;
+    }
+
     .breadcrumbs {
         /* flex-direction: column; */
         gap: 20px;
@@ -1954,6 +1964,7 @@ textarea:focus {
     .why-choose-us-container {
         flex-direction: column;
         gap: 40px;
+        margin-top: 8px;
     }
 
     .why-choose-us-images,
@@ -2074,11 +2085,21 @@ textarea:focus {
         /* Remove side padding on main for phones */
     }
 
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
     .breadcrumbs {
         gap: 20px;
         left: 50%;
         transform: translateX(-50%);
         margin-top: 10px;
+    }
+
+    .hero-section img {
+        height: 28vh;
+        object-fit: cover;
     }
 
     .breadcrumbs .cta-button-one {
@@ -2213,7 +2234,16 @@ textarea:focus {
         /* Further reduce the main title size */
         top: 30%;
         /* Adjust vertical position */
+    }
 
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        height: 28vh;
+        object-fit: cover;
     }
 
     .breadcrumbs {

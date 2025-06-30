@@ -385,6 +385,16 @@ body {
         transform: translate(-50%, -50%);
     }
 
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        height: 20vh;
+        object-fit: cover;
+    }
+
     .breadcrumbs {
         top: 65%;
         left: 25%;
@@ -427,6 +437,16 @@ body {
         width: 90%;
         /* Prevent it from overflowing */
         text-align: center;
+    }
+
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        height: 20vh;
+        object-fit: cover;
     }
 
     .breadcrumbs {
@@ -477,6 +497,16 @@ body {
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
+    }
+
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        height: 20vh;
+        object-fit: cover;
     }
 
     .breadcrumbs {

@@ -408,6 +408,16 @@ textarea:focus {
         transform: translate(-50%, -50%);
     }
 
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        height: 20vh;
+        object-fit: cover;
+    }
+
     .breadcrumbs {
         top: 65%;
         left: 20%;
@@ -420,7 +430,7 @@ textarea:focus {
     .contact-section {
         flex-direction: column;
         width: 90%;
-        padding-top: 50px;
+        padding-top: 8px;
     }
 
     .contact-feild {
@@ -474,6 +484,16 @@ textarea:focus {
         width: 90%;
         /* Prevent it from overflowing */
         text-align: center;
+    }
+
+    .hero-section {
+        width: 96%;
+        margin: auto;
+    }
+
+    .hero-section img {
+        height: 20vh;
+        object-fit: cover;
     }
 
     .breadcrumbs {

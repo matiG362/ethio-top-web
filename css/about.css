@@ -661,6 +661,11 @@ textarea:focus {
     .process-card {
         width: 30%;
     }
+
+    .hero-section img {
+        height: 23vh;
+        object-fit: cover;
+    }
 }
 
 
@@ -676,6 +681,11 @@ textarea:focus {
         width: 90%;
         /* Prevent it from overflowing */
         text-align: center;
+    }
+
+    .hero-section img {
+        height: 23vh;
+        object-fit: cover;
     }
 
     .breadcrumbs {
@@ -782,6 +792,11 @@ textarea:focus {
         text-align: center;
     }
 
+    .hero-section img {
+        height: 23vh;
+        object-fit: cover;
+    }
+
     .breadcrumbs {
         top: 60%;
         left: 24%;
@@ -815,4 +830,10 @@ textarea:focus {
     .about-gallery {
         display: none;
     }
+
+    .hero-section img {
+        height: 20vh;
+        object-fit: cover;
+    }
+
 }
