@@ -1949,8 +1949,12 @@ textarea:focus {
     }
 
     .hero-section img {
-        height: 20vh;
+        height: 35vh;
         object-fit: cover;
+    }
+
+    .faq {
+        padding-top: 0px;
     }
 
     .breadcrumbs {
@@ -2098,7 +2102,7 @@ textarea:focus {
     }
 
     .hero-section img {
-        height: 28vh;
+        height: 35vh;
         object-fit: cover;
     }
 
@@ -2242,7 +2246,7 @@ textarea:focus {
     }
 
     .hero-section img {
-        height: 28vh;
+        height: 35vh;
         object-fit: cover;
     }
 
