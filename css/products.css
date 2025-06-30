@@ -217,15 +217,16 @@ body {
         transform: translateX(-50%);
     }
 
+    /* 
     .hero-section {
         width: 96%;
         margin: auto;
-    }
+    } */
 
-    .hero-section img {
-        height: 35vh;
+    /* .hero-section img {
+        height: 25vh;
         object-fit: cover;
-    }
+    } */
 }
 
 /* --- Breakpoint for Phones (e.g., 768px) --- */
@@ -242,15 +243,15 @@ body {
         text-align: center;
     }
 
-    .hero-section {
+    /* .hero-section {
         width: 96%;
         margin: auto;
-    }
+    } */
 
-    .hero-section img {
-        height: 35vh;
+    /* .hero-section img {
+        height: 25vh;
         object-fit: cover;
-    }
+    } */
 
     .breadcrumbs {
         top: 60%;
@@ -320,13 +321,13 @@ body {
         text-align: center;
     }
 
-    .hero-section {
+    /* .hero-section {
         width: 96%;
         margin: auto;
-    }
+    } */
 
     .hero-section img {
-        height: 35vh;
+        height: 25vh;
         object-fit: cover;
     }
 

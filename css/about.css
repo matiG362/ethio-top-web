@@ -630,6 +630,7 @@ textarea:focus {
     .about-info {
         width: 100%;
         max-width: 550px;
+        margin-left: 20px;
     }
 
     /* Adjust the children to take up full width */
