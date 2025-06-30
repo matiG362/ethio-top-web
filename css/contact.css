@@ -443,6 +443,10 @@ textarea:focus {
         order: 2;
     }
 
+    .after-middle {
+        width: 100%;
+    }
+
     /* --- Info Section: Stack the 3 columns --- */
     .info-section {
         flex-direction: column;
