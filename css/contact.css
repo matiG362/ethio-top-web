@@ -77,8 +77,9 @@ body {
     gap: 30px;
 }
 
-.contact-image img {
+.contact-image iframe {
     height: 650px;
+    width: 500px;
 }
 
 .contact-feild {
@@ -308,7 +309,7 @@ textarea:focus {
 
 /* Info Section */
 .info-section {
-    width: 80%;
+    width: 90%;
     background-color: #fff;
     padding: 30px;
     display: flex;
@@ -394,6 +395,17 @@ textarea:focus {
 /* ==========================================================================
    TABLET & MOBILE STYLES -- Contact Page
    ========================================================================== */
+@media(max-width:1024px) {
+    .contact-image iframe {
+        height: 650px;
+        width: 300px;
+    }
+
+    .info-section {
+        width: 90%;
+        gap: 12px;
+    }
+}
 
 /* --- Breakpoint for Tablets & Down (e.g., 992px) --- */
 @media (max-width: 992px) {
@@ -441,12 +453,13 @@ textarea:focus {
         /* Allow the form container to be full width */
     }
 
-    .contact-image img {
-        height: auto;
-        /* Let image height adjust */
+    /* .contact-image iframe {
         width: 100%;
         max-width: 600px;
-        /* Match form max-width */
+    } */
+    .contact-image iframe {
+        height: 650px;
+        width: 500px;
     }
 
     .contact-image {
@@ -548,5 +561,13 @@ textarea:focus {
     .hero-section img {
         height: 20vh;
         object-fit: cover;
+    }
+
+    .contact-image iframe {
+        /* height: auto; */
+        /* Let image height adjust */
+        width: 100%;
+        max-width: 600px;
+        /* Match form max-width */
     }
 }

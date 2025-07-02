@@ -208,11 +208,12 @@ main {
     left: 10%;
     transform: translateY(-50%);
     color: white;
-    font-size: 3.5rem;
     /* Large and impactful */
     line-height: 1.2;
     text-align: left;
     margin: 0;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 /* The container for the buttons/links below the heading */
@@ -481,12 +482,6 @@ main {
     margin-top: 15px;
     margin-bottom: 30px;
     color: #555;
-}
-
-.quality-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
 }
 
 .quality-item .quality-item-header {
@@ -808,20 +803,9 @@ main {
     margin: 40px auto;
 }
 
-.middle-image img {
-    width: 95%;
-    margin-bottom: 70px;
-}
+
 
 /* Ordering Process Styles */
-.ordering-process {
-    padding: 50px 0;
-    background-color: white;
-    text-align: center;
-    background-image: none;
-    margin: 0px 30px;
-}
-
 .ordering-process .container {
     padding: 0px 80px 40px 80px;
 }
@@ -1111,15 +1095,6 @@ main {
     text-align: center;
 }
 
-.middle-image img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 0px;
-}
-
-
-
 /* about-us-container section Styles */
 
 .about-us-container {
@@ -1127,11 +1102,6 @@ main {
     padding: 20px;
     border-radius: 10px;
     margin: 100px;
-}
-
-.hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
 }
 
 /* About Section Styles */
@@ -1344,6 +1314,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    margin: 0px 30px;
 }
 
 .ordering-process-text {
@@ -1403,6 +1374,7 @@ main {
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
+    display: none;
 }
 
 /* Contact Section */
@@ -1594,7 +1566,7 @@ main {
 }
 
 .contact-form button {
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
     padding: 20px;
     border: none;
