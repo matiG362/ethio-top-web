@@ -703,23 +703,33 @@ main {
     font-weight: 600;
 }
 
+/* Find this existing rule in your style.css */
 .faq-answer {
-    padding: 0 10px;
-    display: none;
-    /* Initially hide the answer */
-    transition: max-height 0.3s ease-out;
+    /* padding: 0 10px; REMOVE THIS OR KEEP IT, YOUR CHOICE */
+    display: block;
+    /* CHANGE THIS from display: none; */
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    /* UPDATE THIS */
     max-height: 0;
     overflow: hidden;
     color: rgba(114, 114, 114, 1);
     font-weight: 400;
 }
 
+/* Find this existing rule */
 .faq-answer.active {
-    display: block;
-    /* Show the answer when active */
+    /* REMOVE ALL RULES from here. The JS now handles it with max-height. */
+    /* If you want padding, add it here */
+    padding: 15px 15px 15px 15px;
     max-height: 500px;
-    /* Adjust as needed */
-    padding: 10px;
+}
+
+/* Find this existing rule */
+.faq-toggle.active {
+    transform: rotate(90deg);
+    /* I changed this to 90deg for a classic down arrow */
+    background-color: rgba(15, 77, 156, 1);
+    color: white;
 }
 
 .faq-toggle {
@@ -738,14 +748,81 @@ main {
     color: #005599;
 }
 
-.faq-toggle.active {
-    transform: rotate(-90deg);
+/* ==========================================================================
+   DUAL-STYLE SCROLLING MARQUEE (FINAL, BULLETPROOF CSS)
+   ========================================================================== */
+
+.marquee-container {
     background-color: rgba(15, 77, 156, 1);
+    color: white;
+    padding: 20px 0;
+    overflow: hidden;
+    /* This is essential */
+    margin: 40px 0;
+}
+
+.marquee-wrapper {
+    display: flex;
+    /* Let the width be determined by its content */
+    width: fit-content;
+    /* The animation will move the wrapper */
+    animation: scroll-left 30s linear infinite;
+}
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    /* This is the most important rule: IT PREVENTS SQUISHING */
+    flex-shrink: 0;
+    /* Add padding to create space between each item */
+    padding: 0 4vw;
+    white-space: nowrap;
+    /* Ensures text & icon stay on one line */
+}
+
+/* Base styling for ALL text */
+.marquee-item span {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Style for PART 1 (Solid) */
+.marquee-item span {
     color: white;
 }
 
-.upper-mid-image img {
-    width: 100%;
+/* Style for PART 2 (Outline) */
+.marquee-item--outline span {
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
+    text-stroke: 1.5px white;
+}
+
+/* Styling for BOTH icon images */
+.marquee-icon {
+    height: 2.5rem;
+    width: auto;
+    margin-left: 3em;
+}
+
+/* Pause animation on hover */
+.marquee-container:hover .marquee-wrapper {
+    animation-play-state: paused;
+}
+
+/* Keyframes - moves left by the width of the first TWO items */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        /* This moves the wrapper left by exactly half its own width */
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -1718,6 +1795,63 @@ textarea:focus {
 
 
 
+/* ==========================================================================
+   GLOBAL TRANSITIONS & ANIMATIONS
+   ========================================================================== */
+
+/* Smooth transitions for all links and buttons */
+a,
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+/* A subtle "lift" effect for cards and key elements on hover */
+.product-card:hover,
+.process-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Button hover effect */
+.cta-button-one:hover,
+.see-more-button:hover,
+.contact-form button:hover,
+a.order-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* --- Base state for elements that will animate on scroll --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* --- The state when the element becomes visible --- */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Staggered animation delays --- */
+.animate-on-scroll.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.animate-on-scroll.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.animate-on-scroll.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.animate-on-scroll.delay-4 {
+    transition-delay: 0.4s;
+}
+
+
 /* Responsive Footer Styles */
 
 /* Small Mobile Devices (up to 600px width) */
@@ -1921,7 +2055,7 @@ textarea:focus {
     }
 
     .hero-section img {
-        height: 35vh;
+        /* height: 35vh; */
         object-fit: cover;
     }
 
@@ -2124,6 +2258,24 @@ textarea:focus {
 
     .products-section .product-content {
         padding: 20px;
+    }
+
+    .marquee-item span {
+        font-size: 1.5rem;
+    }
+
+    .marquee-item--outline span {
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+    }
+
+    .marquee-icon {
+        height: 1.8rem;
+    }
+
+    /* On smaller screens, allow items to be closer */
+    .marquee-group {
+        justify-content: space-evenly;
     }
 
     /* --- FAQ Images --- */

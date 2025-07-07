@@ -34,15 +34,30 @@ document.addEventListener('DOMContentLoaded', () => {
     let showingAllCategories = false; // Tracks the current state
 
     // Function to render product cards (remains the same)
+    // Find this function in your home.js file
+
     const renderProductCards = (productsToRender) => {
         productListDiv.innerHTML = ''; // Clear existing content
-        productsToRender.forEach(product => {
-            if (product) { // Ensure product is not null (in case a category file was empty)
+
+        // The forEach loop now includes the 'index'
+        productsToRender.forEach((product, index) => {
+            if (product) {
                 const productCard = document.createElement('div');
                 productCard.classList.add('product-card');
 
+                // --- ANIMATION CLASSES ADDED HERE ---
+                productCard.classList.add('animate-on-scroll'); // <-- NEW: Base animation class
+
+                // Stagger the animation delay for a nice cascading effect
+                // It will cycle through delay-1, delay-2, delay-3, delay-4
+                const delayClass = 'delay-' + ((index % 4) + 1);
+                productCard.classList.add(delayClass); // <-- NEW: Add the calculated delay
+                // ------------------------------------
+
                 const product_card_image = document.createElement('div');
                 product_card_image.classList.add('product-card-image');
+
+                // ... THE REST OF YOUR FUNCTION REMAINS EXACTLY THE SAME ...
 
                 const product_content = document.createElement('div');
                 product_content.classList.add('product-content');
@@ -55,22 +70,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const product_card_image_img = document.createElement('img');
 
-                // IMPORTANT: Your detailed product JSONs (e.g., "Wubet 001") do NOT have an 'image' property.
-                // This line will use a fallback image unless you add an 'image' property to each product
-                // object in your category-specific JSON files.
-                product_card_image_img.src = product.image || '/products-image/paint-number1.png'; // Fallback image if no 'image' property
+                product_card_image_img.src = product.image || '/products-image/paint-number1.png';
                 product_card_image_img.alt = `${product.name}`;
 
                 product_card_image.appendChild(product_card_image_img);
 
                 product_content_header.innerHTML = `<h3>${product.name}</h3>
-                                                    <p>${product.description || 'No description'}</p>`;
+                                                <p>${product.description || 'No description'}</p>`;
 
-                // The link currently goes to a generic products.html.
-                // If you want to link to a specific detail page for *this product*,
-                // you'll need to pass parameters, e.g., `../html/product-detail.html?category=${product.categoryName}&productCode=${product.name}`
                 product_content_footer.innerHTML = `<a href="../html/products.html">View Product</a>
-                                                    <img src="/products-image/diagonal-arrow.png" alt="diagonal arrow">`;
+                                                <img src="/products-image/diagonal-arrow.png" alt="diagonal arrow">`;
 
                 product_content.appendChild(product_content_header);
                 product_content.appendChild(product_content_footer);

@@ -37,7 +37,7 @@
         <div class="why-choose-us-container">
 
             <!-- THIS IS THE NEW FINAL HTML BLOCK -->
-            <div class="why-choose-us-images">
+            <div class="why-choose-us-images animate-on-scroll">
 
                 <!-- Left Column -->
                 <div class="image-col-left">
@@ -61,7 +61,7 @@
             <!-- END OF THE NEW BLOCK -->
 
 
-            <div class="why-choose-us-content">
+            <div class="why-choose-us-content animate-on-scroll delay-1">
                 <h2 class="black">Why Choose </h2>
                 <h2 class="blue">Ethio Top Paints?</h2>
                 <p> Join thousands of satisfied customers who trust Ethio Top Paints!</p>
@@ -134,9 +134,8 @@
                     </div>
                 </div>
 
-                <h1>Explore Our Paints <br>by Category </h1>
+                <h1 class="animate-on-scroll">Explore Our Paints <br>by Category </h1>
                 <div class="products-grid">
-
 
                 </div>
                 <div class="line-with-button">
@@ -212,16 +211,41 @@
                 </div>
             </div>
         </section>
-        <div class="upper-mid-image">
-            <img src="/home-image/Line.png" alt="">
-        </div>
+        <!-- === DUAL-STYLE SCROLLING MARQUEE (FINAL, FLAT STRUCTURE) === -->
+        <section class="marquee-container">
+            <div class="marquee-wrapper">
+
+                <!-- The First Set of Items -->
+                <div class="marquee-item">
+                    <span>Premium Paints, Made for Ethiopia!</span>
+                    <img src="/home-image/paint-roller-icon.svg" alt="Paint Roller Icon" class="marquee-icon">
+                </div>
+                <div class="marquee-item marquee-item--outline">
+                    <span>Premium Paints, Made for Ethiopia!</span>
+                    <img src="/home-image/paint-roller-icon-outline.svg" alt="Paint Roller Icon Outline"
+                        class="marquee-icon">
+                </div>
+
+                <!-- The Second Set (Identical Copy for the Loop) -->
+                <div class="marquee-item" aria-hidden="true">
+                    <span>Premium Paints, Made for Ethiopia!</span>
+                    <img src="/home-image/paint-roller-icon.svg" alt="Paint Roller Icon" class="marquee-icon">
+                </div>
+                <div class="marquee-item marquee-item--outline" aria-hidden="true">
+                    <span>Premium Paints, Made for Ethiopia!</span>
+                    <img src="/home-image/paint-roller-icon-outline.svg" alt="Paint Roller Icon Outline"
+                        class="marquee-icon">
+                </div>
+
+            </div>
+        </section>
 
         <section class="testimonial">
             <div class="container testimonial-container">
-                <div class="testimonial-image">
+                <div class="testimonial-image animate-on-scroll">
                     <img src="/home-image/image(7).png" alt="Living Room">
                 </div>
-                <div class="testimonial-content">
+                <div class="testimonial-content animate-on-scroll delay-1">
                     <img src="/home-image/Group 1000009702.png" alt="">
                     <p>Ethio Top Paints completely transformed my home! The colors are rich, the finish is flawless, and
                         the durability is outstanding. Even after years, my walls still look fresh and vibrant. Highly
@@ -247,17 +271,17 @@
                 </div>
                 <h2>Simple, Fast & Hassle-Free!</h2>
                 <div class="process-steps">
-                    <div class="process-step">
+                    <div class="process-step animate-on-scroll">
                         <img src="/home-image/01(1).png" alt="">
                         <h3>Choose Your Paint</h3>
                         <p>Find the perfect color and finish to bring your vision to life!</p>
                     </div>
-                    <div class="process-step">
+                    <div class="process-step animate-on-scroll delay-1">
                         <img src="/home-image/02(1).png" alt="">
                         <h3>Place Your Order</h3>
                         <p>Order easily through our trusted retailers or contact us for expert guidance.</p>
                     </div>
-                    <div class="process-step">
+                    <div class="process-step  animate-on-scroll delay-2">
                         <img src="/home-image/03(1).png" alt="">
                         <h3>Get It Delivered</h3>
                         <p>Sit back and relax as we bring your paint straight to your door, hassle-free!</p>
@@ -267,7 +291,7 @@
         </section>
 
 
-        <section class="cta-section">
+        <section class="cta-section animate-on-scroll">
             <div class="container-two">
                 <div class="description">
                     <div class="both-holder">
@@ -311,7 +335,7 @@
                             <img src="/home-image/Group 40068.png" alt="">
                         </div>
                         <div class="cta-item-des">
-                            <h3>10k+</h3>
+                            <h3>10000+</h3>
                             <p>Homeowners & Interior Designers</p>
                         </div>
                     </div>
@@ -329,7 +353,7 @@
         </section>
 
         <section class="contact-section">
-            <form action="https://formsubmit.co/ethiotoppaints@gmail.com" method="POST">
+            <form action="https://formsubmit.co/ethiotoppaints@gmail.com" method="POST" class="animate-on-scroll">
                 <div class="contact-form">
                     <!-- This row contains the side-by-side fields -->
                     <div class="form-row">
@@ -369,7 +393,7 @@
                 </div>
             </form>
 
-            <div class="faq-content">
+            <div class="faq-content animate-on-scroll delay-1">
                 <div class="faq-content-header">
                     <p>Message Us</p>
                     <div>
@@ -426,6 +450,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="/js/home.js"></script>
+    <script src="/js/animations.js"></script>
 </body>
 
 </html>

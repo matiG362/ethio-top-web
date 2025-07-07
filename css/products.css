@@ -39,8 +39,8 @@ body {
 .breadcrumbs {
     position: absolute;
     /* Position this relative to the hero-section */
-    top: 55%;
-    left: 14%;
+    top: 60%;
+    left: 19%;
     transform: translateY(1em);
     /* Another small correction */
     color: white;
@@ -206,6 +206,93 @@ body {
     margin-bottom: 0px;
 }
 
+/* ==========================================================================
+   PRODUCTS PAGE - DYNAMIC ANIMATIONS
+   ========================================================================== */
+
+/* --- 1. Global Hover & Transition Effects --- */
+.product-card,
+.see-more-button {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.18);
+}
+
+.see-more-button:hover {
+    transform: scale(1.05);
+    background-color: #104D9D;
+    /* A slightly darker blue on hover */
+}
+
+
+/* --- 2. Hero Section Entrance Animation --- */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hero-section h1,
+.hero-section .breadcrumbs {
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+.hero-section .breadcrumbs {
+    animation-delay: 0.2s;
+    opacity: 0;
+    /* Start hidden until animation begins */
+}
+
+
+/* --- 3. Scroll-Triggered Animation Setup --- */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up {
+    transform: translateY(40px);
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+    /* Reset transform to original position */
+}
+
+/* Staggered animation delays for the cards */
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.delay-4 {
+    transition-delay: 0.4s;
+}
+
+.delay-5 {
+    transition-delay: 0.5s;
+}
+
+.delay-6 {
+    transition-delay: 0.6s;
+}
 
 /* ==========================================================================
    TABLET & MOBILE STYLES -- Products Page

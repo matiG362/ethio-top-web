@@ -16,6 +16,99 @@
     left: 24%;
 }
 
+/* ==========================================================================
+   CATEGORY CONTENT PAGE - DYNAMIC ANIMATIONS
+   ========================================================================== */
+
+/* --- 1. Global Hover & Transition Effects --- */
+.product-card,
+.previous-button,
+.next-button {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* We use !important here because the base styles are added inline via JS */
+.previous-button:hover,
+.next-button:hover {
+    transform: scale(1.05);
+    background-color: #104D9D !important;
+    box-shadow: 0 4px 15px rgba(15, 77, 156, 0.4);
+}
+
+/* --- 2. Hero Section Entrance Animation --- */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hero-section h1,
+.hero-section .breadcrumbs {
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+.hero-section .breadcrumbs {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+/* --- 3. Product Card & Grid Animations --- */
+
+/* This class will be used to fade out the grid before loading new content */
+.products-grid.is-fading-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Base state for individual cards that will animate in */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Visible state for the cards */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Staggered animation delays for the cards */
+.delay-1 {
+    transition-delay: 0.05s;
+}
+
+.delay-2 {
+    transition-delay: 0.1s;
+}
+
+.delay-3 {
+    transition-delay: 0.15s;
+}
+
+.delay-4 {
+    transition-delay: 0.2s;
+}
+
+.delay-5 {
+    transition-delay: 0.25s;
+}
+
+.delay-6 {
+    transition-delay: 0.3s;
+}
+
 @media(max-width:1024px) {
     .breadcrumbs {
         left: 8%;

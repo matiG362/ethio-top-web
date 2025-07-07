@@ -1,22 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
     const categoryListDiv = document.querySelector('.products-grid');
-    const seeMoreButton = document.querySelector('.see-more-button'); // Select the "See More" button
+    const seeMoreButton = document.querySelector('.see-more-button');
     const categoriesJsonFilePath = '../data/catagory-data.json';
 
-    const initialDisplayLimit = 6; // Number of categories to show initially
-    let allCategories = []; // To store all fetched categories
-    let showingAll = false; // New variable to track the current state: false (showing initial limit), true (showing all)
+    const initialDisplayLimit = 6;
+    let allCategories = [];
+    let showingAll = false;
 
-    // Function to render categories
+    // --- MODIFIED RENDER FUNCTION ---
     const renderCategories = (categoriesToRender) => {
         categoryListDiv.innerHTML = ''; // Clear existing content
-        categoriesToRender.forEach(category => {
+        categoriesToRender.forEach((category, index) => {
             const categoryDiv = document.createElement('div');
             categoryDiv.classList.add('product-card');
+
+            // --- ADD ANIMATION CLASSES --- // NEW
+            categoryDiv.classList.add('animate-on-scroll', 'fade-in-up');
+            // Stagger the delay for a nice cascade effect, cycles 1 through 6
+            const delayClass = 'delay-' + ((index % 6) + 1);
+            categoryDiv.classList.add(delayClass);
+            // --------------------------- // NEW
 
             const product_card_image = document.createElement('div');
             product_card_image.classList.add('product-card-image');
 
+            // ... the rest of your card creation code remains the same ...
             const product_content = document.createElement('div');
             product_content.classList.add('product-content');
 
@@ -45,6 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
             categoryDiv.appendChild(product_content);
             categoryListDiv.appendChild(categoryDiv);
         });
+
+        // --- RE-RUN THE ANIMATION OBSERVER --- // NEW
+        // This ensures new cards loaded via "See More" will also animate
+        if (window.observeElements) {
+            window.observeElements();
+        }
+        // ------------------------------------- // NEW
     };
 
     // Fetch the data
